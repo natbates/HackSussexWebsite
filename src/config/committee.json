@@ -72,5 +72,42 @@
     "year": "2025/2026",
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_y5038f64.jpg",
     "pastCommittee": false
+  },
+  {
+    "id": "mem_r1ole6q08oi",
+    "name": "Colin McCallum",
+    "role": "General Committee",
+    "year": "2024/2025, 2025/2026",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_c8c1wb2u.png",
+    "pastCommittee": false
+  },
+  {
+    "id": "mem_mr3bfiu8umk",
+    "name": "Jack Speat",
+    "role": "General Committee",
+    "year": "",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_iysm60lk.jpg",
+    "pastCommittee": false,
+    "github": "https://github.com/Speaty",
+    "linkedin": "https://www.linkedin.com/in/jack-speat-7333491b3/"
+  },
+  {
+    "id": "mem_73jqt35d4yb",
+    "name": "Tom Harwood",
+    "role": "General Committee",
+    "year": "",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_uw7tkgwv.jpg",
+    "pastCommittee": false,
+    "github": "https://github.com/tomtehtom",
+    "linkedin": "https://www.linkedin.com/in/teharwood/"
+  },
+  {
+    "id": "mem_cfewr9cz8vc",
+    "name": "Lukas Hastings",
+    "role": "General Committee",
+    "year": "",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_zsa3n69l.jpg",
+    "pastCommittee": false,
+    "linkedin": "https://www.linkedin.com/in/lukas-hastings-a9a055255/"
   }
 ]
