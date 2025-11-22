@@ -1,6 +1,17 @@
 {
   "upcomingEvents": [
+    {
+      "id": "evt_lp72u50x3w",
+      "title": "test 2",
+      "date": "2025-11-22T02:15:04.235Z",
+      "location": "test",
+      "description": "testing",
+      "sponsors": [],
+      "logo": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/events/events_8cfav9iz.jpg",
+      "section": "upcomingEvents",
+      "ticketsLink": "https://link.com",
+      "eventType": "Coders Cup"
+    }
   ],
-  "pastEvents": [
-  ]
+  "pastEvents": []
 }
