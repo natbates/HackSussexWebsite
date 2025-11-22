@@ -4,5 +4,11 @@
     "name": "test",
     "website": "https://test.com",
     "logoUrl": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/sponsors/sponsors_smcbe20v.jpg"
+  },
+  {
+    "id": "sponsor_8z5bw4dujc",
+    "name": "test",
+    "website": "https://qwdqwd.com",
+    "logoUrl": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/sponsors/sponsors_829s6lds.png"
   }
 ]
