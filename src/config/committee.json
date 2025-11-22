@@ -109,5 +109,72 @@
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_zsa3n69l.jpg",
     "pastCommittee": false,
     "linkedin": "https://www.linkedin.com/in/lukas-hastings-a9a055255/"
+  },
+  {
+    "id": "mem_47i43m1px3e",
+    "name": "Patrick Culmer",
+    "role": "President",
+    "year": "2023/2024, 2024/2025",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_py243unx.jpg",
+    "pastCommittee": false,
+    "github": "https://github.com/VeryCoolPatrick",
+    "linkedin": "https://www.linkedin.com/in/patrick-culmer-982628195/"
+  },
+  {
+    "id": "mem_adzblb5989k",
+    "name": "Bryn Baker",
+    "role": "Welfare",
+    "year": "2024/2025",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_1v5y09i7.jpg",
+    "pastCommittee": false
+  },
+  {
+    "id": "mem_28db5eyg9f9",
+    "name": "Nathaniel Roumana",
+    "role": "Social Media",
+    "year": "2024/2025",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_tqug3tr8.png",
+    "pastCommittee": false,
+    "linkedin": "https://www.linkedin.com/in/nathanielroumana/",
+    "github": "https://github.com/TheAesthetical"
+  },
+  {
+    "id": "mem_s0u053kgjuq",
+    "name": "Keagan Kozlowski",
+    "role": "Finance",
+    "year": "2023/2024, 2024/2025",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_iy2zrig5.jpg",
+    "pastCommittee": false,
+    "linkedin": "https://www.linkedin.com/in/keagankozlowski/",
+    "github": "https://github.com/KeaganKozlowski"
+  },
+  {
+    "id": "mem_lz2eshm9d5",
+    "name": "Jacopo Calvi",
+    "role": "Web development",
+    "year": "",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_vwoepoa5.jpg",
+    "pastCommittee": false,
+    "github": "https://github.com/cactuuus",
+    "linkedin": "https://www.linkedin.com/in/jacopo-poe-calvi/"
+  },
+  {
+    "id": "mem_b96hgznuk9j",
+    "name": "Waripmamo-owei Dudafa",
+    "role": "Web development",
+    "year": "2024/2025",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_tj57h3zs.jpg",
+    "pastCommittee": true,
+    "github": "https://github.com/Wari-Dudafa",
+    "linkedin": "https://www.linkedin.com/in/waripamo-owei-dudafa-832130241/"
+  },
+  {
+    "id": "mem_8kwcbb1e5di",
+    "name": "Luke Shanks",
+    "role": "General Committee",
+    "year": "2024/2025",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_wocekjme.jpg",
+    "pastCommittee": false,
+    "github": "https://github.com/LukeS03"
   }
 ]
