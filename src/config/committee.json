@@ -9,11 +9,29 @@
   },
   {
     "id": "mem_j3l14ib4f1",
-    "name": "Charlotte",
+    "name": "Charlotte Richardson",
     "role": "President",
     "year": "2025/2026",
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_dxmc8wk1.jpg",
     "pastCommittee": false,
     "linkedin": "https://www.linkedin.com/in/charlotte-richardson-7673a11a2/"
+  },
+  {
+    "id": "mem_yhz9umre6te",
+    "name": "Amy Scott",
+    "role": "Social Media",
+    "year": "2023/2024, 2024/2025, 2025/2026",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_g3tf0tth.jpg",
+    "pastCommittee": false,
+    "linkedin": "https://uk.linkedin.com/in/amy-scott-ba6038221"
+  },
+  {
+    "id": "mem_yu09w81p8zp",
+    "name": "Finley Hudson",
+    "role": "Graphic Design",
+    "year": "",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_jq3frvbc.jpg",
+    "pastCommittee": false,
+    "linkedin": "https://www.linkedin.com/in/finley-hudson"
   }
 ]
