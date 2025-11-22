@@ -14,7 +14,8 @@
     "year": "2025/2026",
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_dxmc8wk1.jpg",
     "pastCommittee": false,
-    "linkedin": "https://www.linkedin.com/in/charlotte-richardson-7673a11a2/"
+    "linkedin": "https://www.linkedin.com/in/charlotte-richardson-7673a11a2/",
+    "github": "https://github.com/Charlotte-R-01134"
   },
   {
     "id": "mem_yhz9umre6te",
@@ -29,9 +30,47 @@
     "id": "mem_yu09w81p8zp",
     "name": "Finley Hudson",
     "role": "Graphic Design",
-    "year": "",
+    "year": "2023/2024, 2024/2025, 2025/2026",
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_jq3frvbc.jpg",
     "pastCommittee": false,
-    "linkedin": "https://www.linkedin.com/in/finley-hudson"
+    "linkedin": "https://www.linkedin.com/in/finley-hudson",
+    "github": "https://github.com/NeverHave1Ever2"
+  },
+  {
+    "id": "mem_64mm7x1v6mh",
+    "name": "David Frommont",
+    "role": "Finance",
+    "year": "2023/2024, 2025/2026",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_0s9yiytt.png",
+    "pastCommittee": false,
+    "github": "https://github.com/dfrommont",
+    "linkedin": "https://www.linkedin.com/in/david-frommont/"
+  },
+  {
+    "id": "mem_0yzgkjes597",
+    "name": "Ella Bennison",
+    "role": "Competitive Programming",
+    "year": "2023/2024",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_4q83sxiz.jpg",
+    "pastCommittee": false,
+    "linkedin": "https://www.linkedin.com/in/ella-bennison-7bab61254",
+    "github": "https://github.com/EllaCompSci"
+  },
+  {
+    "id": "mem_k2smnp4dj0k",
+    "name": "Jack Gibbs",
+    "role": "Web development",
+    "year": "2025/2026",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_13igs9jq.jpg",
+    "pastCommittee": false,
+    "linkedin": "https://www.linkedin.com/in/jack-edward-gibson/"
+  },
+  {
+    "id": "mem_8t6rzhggqea",
+    "name": "Zainob Oyin",
+    "role": "Social Media",
+    "year": "2025/2026",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_y5038f64.jpg",
+    "pastCommittee": false
   }
 ]
