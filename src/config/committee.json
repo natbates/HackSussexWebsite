@@ -6,5 +6,14 @@
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_1n74y1ti.jpeg",
     "pastCommittee": false,
     "year": "2025"
+  },
+  {
+    "id": "mem_j3l14ib4f1",
+    "name": "Charlotte",
+    "role": "President",
+    "year": "2025/2026",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_dxmc8wk1.jpg",
+    "pastCommittee": false,
+    "linkedin": "https://www.linkedin.com/in/charlotte-richardson-7673a11a2/"
   }
 ]
