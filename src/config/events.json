@@ -2,15 +2,15 @@
   "upcomingEvents": [
     {
       "id": "evt_lp72u50x3w",
-      "title": "test 2",
-      "date": "2025-11-22T02:15:04.235Z",
-      "location": "test",
-      "description": "testing",
+      "title": "Game Jam 2025",
+      "date": "2026-01-06T10:10:00.000Z",
+      "location": "University of Sussex",
+      "description": "The Game Jam is back! Collaborating with many of the local studios surrounding Brighton to focus in on our Game Development and Design enthusiasts. Much like a hackathon, teams will be tasked with building a project to compete in tracks to inspire game design and win prizes.If you are looking for an opportunity to collaborate with others and experience trial and error throughout the game development process, this event would be a good match for you. Also, it will be great for those who are looking for a place to have exploration of new technologies in the realm of game development. The event is entirely free and paid for by our lovely sponsors. HackSussex GameJam 2025 is run in accordance with the MLH Code of Conduct.",
       "sponsors": [],
-      "logo": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/events/events_8cfav9iz.jpg",
+      "logo": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/events/events_6iybejp1.png",
       "section": "upcomingEvents",
-      "ticketsLink": "https://link.com",
-      "eventType": "Coders Cup"
+      "ticketsLink": "https://tickets.hacksussex.com/GameJam2025/",
+      "eventType": "Game Jam"
     }
   ],
   "pastEvents": []
