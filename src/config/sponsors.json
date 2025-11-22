@@ -1,3 +1,8 @@
 [
-
+  {
+    "id": "sponsor_5kxf6kbhset",
+    "name": "test",
+    "website": "https://test.com",
+    "logoUrl": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/sponsors/sponsors_smcbe20v.jpg"
+  }
 ]
