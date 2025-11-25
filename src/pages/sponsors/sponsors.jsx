@@ -6,35 +6,36 @@ import { githubRawToLocal } from "../../util/githubRawToLocal";
 const Sponsors = () => {
   const { sponsors, loading } = useSiteData();
 
-  console.log("Sponsors ", sponsors)
-
   if (loading) return <p>{messages.loading}</p>;
+
+  const isHomePage = window.location.pathname === "/";
+  
+  const selectedSponsors = isHomePage
+    ? sponsors?.filter((sponsor) =>
+        ["Hastings Direct", "BCS", "EDF", "Electric Square"].includes(sponsor.name)
+      )
+    : sponsors;
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.heading}>{messages.title}</h1>
-      <div className={styles.grid}>
-        {sponsors?.map((sponsor) => (
-          <div key={sponsor.id} className={styles.card}>
-            <img
-              src={githubRawToLocal(sponsor.logoUrl)}
-              alt={sponsor.name}
-              className={styles.cardImage}
-            />
-            <h2 className={styles.name}>{sponsor.name}</h2>
-            <p className={styles.description}>{sponsor.description}</p>
-            {sponsor.website && (
-              <a
-                href={sponsor.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.websiteLink}
-              >
-                Visit Website
-              </a>
-            )}
-          </div>
-        ))}
+      <div className={styles.sponsors}>
+        <h1 className={styles.heading}>{messages.title.toUpperCase()}</h1>
+        <div className={styles.grid}>
+          {selectedSponsors?.map((sponsor) => (
+            <div
+              key={sponsor.id}
+              className={styles.card}
+              onClick={() => window.open(sponsor.website)}
+            >
+              <img
+                src={githubRawToLocal(sponsor.logoUrl)}
+                alt={sponsor.name}
+                className={styles.cardImage}
+              />
+              <h2 className={styles.name}>{sponsor.name}</h2>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

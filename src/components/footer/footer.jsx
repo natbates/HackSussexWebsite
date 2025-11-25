@@ -5,10 +5,8 @@ import logo from "../../assets/hackSussex/gradient.png"
 
 const Footer = () => {
     return (
-        <footer className={styles.footer}>
-            <div className={styles.overlay}></div>
-
-            <div className={styles.container}>
+        <footer className={styles.container}>
+            <div className={styles.footer}>
                 <div className={styles.column}>
                     <img
                         src={logo}

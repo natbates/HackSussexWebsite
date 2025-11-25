@@ -1,19 +1,55 @@
 .navbarContainer {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0.3rem 1rem;
-  color: var(--text-colour);
-  position: relative;
-  z-index: 10;
+  padding: 1rem 1.5rem;
   width: 100%;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.358);
+  z-index: 10;
+  max-width: 1600px;
+}
+
+.leftContainer,
+.rightContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.leftContainer {
+  justify-content: flex-start;
+}
+
+.rightContainer {
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.centerContainer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .navLinks {
   display: flex;
   gap: 2.4rem;
   align-items: center;
+  width: var(--max-width);
+}
+
+.navLink {
+  color: var(--text-colour);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navItem
+{
+  transition: transform 0.3s ease;
+}
+
+.navItem:hover {
+  transform: scale(1.1);
 }
 
 .logoContainer {
@@ -23,26 +59,46 @@
 }
 
 .logo {
-  height: 50px; /* adjust as needed */
+  height: 50px;
   padding: 10px;
   object-fit: contain;
+  filter: brightness(0) invert(1);
 }
 
+.navItem {
+  position: relative;
+}
 
-.navLink {
-  color: var(--text-colour);
+.dropdownMenu {
+  position: absolute;
+  top: 20;
+  left: 0;
+  background: white;
+  padding: 0.5rem 0;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-5px);
+  transition: all 0.25s ease;
+  min-width: 180px;
+  z-index: 2000;
+}
+
+.navItem:hover .dropdownMenu {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.dropdownItem {
+  display: block;
+  padding: 0.6rem 1rem;
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s;
-  opacity: 0.6;
-  transition: all 0.3s ease;
+  color: black;
+  font-weight: 400;
+  transition: background 0.2s ease;
+  white-space: nowrap;
 }
 
-.navLink.active
-{
-  opacity: 1 !important;
-}
-
-.navLink:hover {
-  color: var(--accent-colour);
+.dropdownItem:hover {
+  background: rgba(255, 255, 255, 0.15);
 }

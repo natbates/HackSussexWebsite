@@ -5,6 +5,7 @@
   border: none;
   border-radius: 50%;
   padding: 10px;
+  margin-top: 0;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s, transform 0.2s;
 }
@@ -15,12 +16,12 @@
 
 /* 🌞 Light Mode */
 .light {
-  background-color: #6fc6ac;
-  color: #121212;
+  background-color: var(--accent-colour);
+  color: #ffffff;
 }
 
 /* 🌙 Dark Mode */
 .dark {
-  background-color: #222;
+  background-color: var(--accent-colour);
   color: #ffffff;
 }

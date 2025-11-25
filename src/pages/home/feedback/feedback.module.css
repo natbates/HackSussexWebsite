@@ -1,0 +1,56 @@
+
+.container
+{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedbackForm
+{
+    display: flex;
+    flex-direction: column;
+    max-width: var(--max-width);
+    width: 100%;
+    background-color: white;
+}
+
+.feedbackForm h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.feedbackForm textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  font-size: 1rem;
+}
+
+.feedbackForm button {
+    background-color: var(--background-colour);
+    color: white;
+}
+
+.feedbackForm button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.feedbackForm button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.feedbackForm .alreadySubmitted {
+  text-align: center;
+  color: #555;
+  font-style: italic;
+}

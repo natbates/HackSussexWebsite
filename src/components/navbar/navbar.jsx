@@ -3,8 +3,9 @@ import { NavLink, useNavigate } from "react-router-dom";
 import styles from "./navbar.module.css";
 import messages from "./navbar.messages";
 import HSLogo from "../../assets/hackSussex/gradient.png";
-import ThemeButton from "./themeButton/themeButton";
 import { useSiteData } from "../../hooks/useSiteData";
+import SketchyBorder from "../sketchy/sketch-border";
+import SketchButton from "../sketchy/sketch-button";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -21,50 +22,62 @@ const Navbar = () => {
 
   return (
     <div className={styles.navbarContainer}>
-      {/* Logo */}
-      <div className={styles.logoContainer} onClick={() => navigate("/")}>
-        <img src={HSLogo} alt="Hack Sussex Logo" className={styles.logo} />
+
+      <div className={styles.leftContainer}>
+        <div className={styles.logoContainer} onClick={() => navigate("/")}>
+          <img src={HSLogo} alt="Hack Sussex Logo" className={styles.logo} />
+        </div>
       </div>
 
-      {/* Navigation links */}
-      <div className={styles.navLinks}>
-        {links.map((link) =>
-          link.external ? (
-            <a
-              key={link.path}
-              href={link.path}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.navLink}
-            >
-              {link.name}
-            </a>
-          ) : (
-            <NavLink
-              key={link.path}
-              to={link.path}
-              className={({ isActive }) =>
-                isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
-              }
-            >
-              {link.name}
-            </NavLink>
-          )
-        )}
+      <div className={styles.centerContainer}>
+        <div className={styles.navLinks}>
+          {links.map((link) => (
+            <div key={link.name} className={styles.navItem}>
+              {link.external ? (
+                <a
+                  href={link.path}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.navLink}
+                >
+                  {link.name}
+                </a>
+              ) : (
+                <NavLink
+                  to={link.path}
+                  className={({ isActive }) =>
+                    isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
+                  }
+                >
+                  {link.name}
+                </NavLink>
+              )}
+
+              {/* DROPDOWN MENU */}
+              {link.dropdown && (
+                <div className={styles.dropdownMenu}>
+                  {link.dropdown.map((item) => (
+                    <NavLink
+                      key={item.name}
+                      to={item.path}
+                      className={styles.dropdownItem}
+                    >
+                      {item.name}
+                    </NavLink>
+                  ))}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+
       </div>
 
-      {/* Work With Us */}
-      <NavLink
-        to="/work-with-us"
-        className={({ isActive }) =>
-          isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
-        }
-      >
-        {messages.workWithUs}
-      </NavLink>
+      <div className={styles.rightContainer}>
+        <SketchButton>Get Tickets</SketchButton>
+        <SketchButton>Get In Touch</SketchButton>
+      </div>
 
-      {/* Theme button */}
-      <ThemeButton />
     </div>
   );
 };

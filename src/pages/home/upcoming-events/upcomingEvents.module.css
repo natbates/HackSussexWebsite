@@ -1,4 +1,47 @@
 .container {
+  background-color: white;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  border-top-right-radius: 45px;
+  border-top-left-radius: 45px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.mlhBanner
+{
+  position: absolute;
+  top: -50px;
+  width: 130px;
+  left: 50;
+  z-index: 3;
+}
+
+.pageTitle
+{
+    text-align: end;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: black;
+    font-weight: bold;
+}
+
+.pageDescription
+{
+    font-size: 1rem;
+    color: black;
+    text-align: start;
+    opacity: 0.8;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.upComingEvent
+{
+  position: relative;
+  max-width: var(--max-width);
 }
 
 .loading,

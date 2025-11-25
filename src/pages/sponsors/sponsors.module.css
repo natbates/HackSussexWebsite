@@ -1,12 +1,21 @@
 .container {
   padding: 2rem;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
+
+
 .heading {
-  text-align: center;
+  text-align: start;
+  width: 100%;
   margin-bottom: 2rem;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
+  color: black;
 }
 
 .grid {
@@ -14,31 +23,33 @@
   flex-wrap: wrap;
   gap: 1.5rem;
   justify-content: center;
+  max-width: var(--max-width);
 }
 
 .card {
-  border: 1px solid var(--container-border-colour);
   border-radius: var(--border-radius);
-  padding: 1rem;
-  background: var(--container-colour);
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 250px;
+  flex: 1 1 calc(25% - 1.5rem);
+  min-width: 250px;
   text-align: center;
   transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transform: scale(1.05);
 }
 
 .cardImage {
-  width: 120px;
-  height: 120px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
   object-fit: contain;
   margin-bottom: 1rem;
+  filter: brightness(0);
 }
 
 .name {
@@ -65,14 +76,3 @@
   color: var(--accent-colour-dark);
 }
 
-@media (max-width: 600px) {
-  .grid {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card {
-    width: 100%;
-    max-width: 300px;
-  }
-}

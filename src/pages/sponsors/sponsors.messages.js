@@ -1,5 +1,5 @@
 const messages = {
-  title: "Our Sponsors",
+  title: "Some of our sponsors",
   loading: "Loading sponsors...",
 };
 

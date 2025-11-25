@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/home/home";
 import NotFound from "./pages/not-found/not-found";
@@ -16,6 +16,8 @@ import Sponsors from "./pages/sponsors/sponsors";
 import Gallery from "./pages/gallery/gallery";
 import Events from "./pages/events/events";
 
+import PolaroidColumn from "./components/polaroid-column";
+
 const App = () => {
     const { loading } = useSiteData();
 
@@ -29,6 +31,9 @@ const App = () => {
 
     return (
         <div className="page-container">
+            <PolaroidColumn />
+            <PolaroidColumn right={true}/>
+            <div className="background-grid"></div>
             <Navbar />
             <div className="page-content">
                     <Routes>
