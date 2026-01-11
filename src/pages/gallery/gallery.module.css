@@ -1,6 +1,7 @@
 /* Container and heading */
 .container {
-  padding: 2rem;
+  max-width: var(--max-width);
+  width: 100%;
 }
 
 .heading {
@@ -19,42 +20,27 @@
   flex-wrap: wrap;
 }
 
-.filters button {
-  padding: 0.5rem 1rem;
-  border: 1px solid var(--container-border-colour);
-  border-radius: var(--border-radius);
-  background: var(--container-colour);
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.filters button:hover {
-  background: var(--accent-colour);
-  color: white;
+.filters button
+{
+  opacity: 0.7;
 }
 
 .filters button.active {
-  background: var(--accent-colour);
-  color: white;
+  opacity: 1;
 }
 
-/* Image grid */
 .grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1rem;
-  justify-content: center;
+  width: 100%;
 }
 
 .card {
-  width: 200px;
-  height: 150px;
+  aspect-ratio: 16 / 9; /* or 4 / 3 if you prefer */
   overflow: hidden;
-  border-radius: var(--border-radius);
   border: 1px solid var(--container-border-colour);
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .image {
@@ -67,6 +53,21 @@
 .image:hover {
   transform: scale(1.1);
 }
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.pagination button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
 
 /* Responsive for small screens */
 @media (max-width: 600px) {

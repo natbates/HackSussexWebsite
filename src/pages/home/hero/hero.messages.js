@@ -1,9 +1,9 @@
 const messages = {
-    mlhBadgeHref: "https://mlh.io/",
-    mlhBadgeAlt: "MLH Badge 2026",
-    infoVideoSrc: "https://www.youtube.com/watch?v=I0szBuNtyLs", // replace with your video path
-    infoBox2: "Some random ass text here",
-    welcomeText: "Welcome to"
+    welcomeText: "Welcome to the",
+    title: "Hack Sussex Society",
+    description:
+        "The University of Sussex computing society hosting hackathons, workshops, socials, and collaborative events for students of all skill levels.",
+    bottomText: "Follow us and stay up to date with upcoming events and opportunities.",
 };
 
 export default messages;

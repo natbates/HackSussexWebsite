@@ -1,12 +1,8 @@
 .container {
-  background-color: white;
   width: 100vw;
   display: flex;
   justify-content: center;
-  border-top-right-radius: 45px;
-  border-top-left-radius: 45px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  max-width: var(--max-width);
 }
 
 .mlhBanner
@@ -21,10 +17,7 @@
 .pageTitle
 {
     text-align: end;
-    font-size: 3rem;
     margin-bottom: 1rem;
-    color: black;
-    font-weight: bold;
 }
 
 .pageDescription

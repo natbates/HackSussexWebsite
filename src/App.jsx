@@ -15,8 +15,10 @@ import Committee from "./pages/committee/committee";
 import Sponsors from "./pages/sponsors/sponsors";
 import Gallery from "./pages/gallery/gallery";
 import Events from "./pages/events/events";
+import FAQ from "./pages/faq/faq";
 
-import PolaroidColumn from "./components/polaroid/polaroid-column";
+import HSLogo from "../src/assets/hackSussex/gradient.png";
+
 
 const App = () => {
     const { loading } = useSiteData();
@@ -31,8 +33,7 @@ const App = () => {
 
     return (
         <div className="page-container">
-            <PolaroidColumn />
-            <PolaroidColumn right={true}/>
+            <img src={HSLogo} className="hs-logo"></img>
             <div className="background-grid"></div>
             <Navbar />
             <div className="page-content">
@@ -43,6 +44,7 @@ const App = () => {
                     <Route path="/sponsors" element={<Sponsors />} />
                     <Route path="/gallery" element={<Gallery />} />
                     <Route path="/events" element={<Events />} />
+                    <Route path="/faq" element={<FAQ />} />
 
                     <Route path="*" element={<NotFound />} />
                 </Routes>

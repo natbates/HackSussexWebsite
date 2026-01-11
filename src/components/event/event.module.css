@@ -1,15 +1,13 @@
 .eventCard {
   display: flex;
-  border-radius: 16px;
-  background: var(--background-colour);
+  flex-direction: row-reverse;
   transition: transform 0.3s ease;
-  border-radius: 0px;
+  gap: 20px;
 }
 
 .imageWrapper {
-  width: 50%;
+  width: 40%;
   overflow: hidden;
-  padding: 3rem;
   box-sizing: border-box;
 }
 
@@ -20,34 +18,6 @@
   background-color: ghostwhite;
 }
 
-.arrow1, .arrow2, .arrow3
-{
-  width: 100px;
-  position: absolute;
-  z-index: 14;
-}
-
-.arrow1
-{
-  top: 20;
-  right: -85;
-  transform: rotate(270deg);
-}
-
-.arrow2
-{
-  top: 40;
-  right: -40;
-  transform: rotate(300deg);
-}
-
-.arrow3
-{
-  top: -30;
-  right: -100;
-  transform: rotate(230deg);
-}
-
 .logo
 {
     width: 100%;
@@ -56,11 +26,14 @@
     z-index: 1;
 }
 
+.countdown
+{
+  margin-bottom: 0;
+  color: #ff574b;
+}
+
 .content {
-  padding: 1.5rem;
-  width: 50%;
-  background-color: white;
-  margin: 30px;
+  width: 60%;
   box-sizing: border-box;
 }
 
@@ -68,24 +41,20 @@
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
   margin-top: 0;
-  color: black;
 }
 
 .date {
   font-weight: 500;
   font-style: italic;
-  color: black;
 }
 
 .location {
   margin-bottom: 1rem;
-  color: black;
 }
 
 .description {
   margin-bottom: 0.3rem;
   line-height: 1.5;
-  color: black;
 }
 
 .bottomLine {
@@ -112,6 +81,8 @@
 .sponsorLogo {
   width: auto;
   height: 100%;
+  width: 150px;
+  object-fit: contain;
   opacity: 0.8;
   transition: filter 0.3s, opacity 0.3s;
 }
@@ -125,7 +96,7 @@
   display: flex;
   gap: 1rem;
   width: 100%;
-  justify-content: flex-end;
+  justify-content: flex-start;
   margin-top: 15px;
 }
 

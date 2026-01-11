@@ -2,22 +2,24 @@ import React from "react";
 import styles from "./event.module.css";
 import messages from "./event.messages";
 import { githubRawToLocal } from "../../util/githubRawToLocal";
-import SketchyBorder from "../sketchy/sketch-border";
-import Arrow from "../../assets/misc/arrow.png"
 
-const Event = ({ event, sponsors, ticketsClosed }) => {
+const Event = ({ event, sponsors, timer }) => {
   const eventSponsors = sponsors?.filter((s) =>
     event.sponsors.includes(s.id)
   );
 
-  return (
-    <SketchyBorder>
+  const ticketsClosed = timer?.closed;
 
-      <div className="background-grid container"></div>
-      <div className={`${styles.eventCard}`}>
+  return (
+    <div className={styles.eventWrapper}>
+      <div className={styles.eventCard}>
         {/* Image */}
         <div className={styles.imageWrapper}>
-          <img src={githubRawToLocal(event.logo)} alt={`${event.title} Logo`} className={styles.logo} />
+          <img
+            src={githubRawToLocal(event.logo)}
+            alt={`${event.title} Logo`}
+            className={styles.logo}
+          />
         </div>
 
         {/* Content */}
@@ -36,8 +38,11 @@ const Event = ({ event, sponsors, ticketsClosed }) => {
           <p className={styles.location}>{event.location}</p>
           <p className={styles.description}>{event.description}</p>
 
-          {/* Sponsors */}
-          <div className={styles.bottomLine}>
+          {/* Countdown */}
+          <p className={styles.countdown}>
+            {timer?.text || "Loading..."}
+          </p>
+
             {eventSponsors?.length > 0 && (
               <div className={styles.sponsors}>
                 <p className={styles.sponsorTitle}>
@@ -62,25 +67,32 @@ const Event = ({ event, sponsors, ticketsClosed }) => {
               </div>
             )}
 
-            {!ticketsClosed && 
             <div className={styles.buttons}>
-              <button>{messages.calendarBtnText}</button>
+              {!ticketsClosed && (
+                <>
+                  <button>{messages.calendarBtnText}</button>
 
-              <button
-              style={{position: "relative"}}
-                onClick={() =>
-                  window.open(event.ticketsLink, "_blank", "noopener,noreferrer")
-                }
-              ><img className={styles.arrow1} src ={Arrow}></img>
-               <img className={styles.arrow2} src ={Arrow}></img>
-               <img className={styles.arrow3} src ={Arrow}></img>
-                {messages.ticketsBtnText}
-              </button>
-            </div>}
-          </div>
+                  {event.ticketsLink?.startsWith("https") && (
+                    <button
+                      onClick={() =>
+                        window.open(
+                          event.ticketsLink,
+                          "_blank",
+                          "noopener,noreferrer"
+                        )
+                      }
+                    >
+                      {messages.ticketsBtnText}
+                    </button>
+                  )}
+
+                </>
+              )}
+              <button>See Schedule</button>
+            </div>
         </div>
       </div>
-    </SketchyBorder>
+    </div>
   );
 };
 

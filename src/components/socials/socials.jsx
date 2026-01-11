@@ -1,16 +1,14 @@
 import styles from "./socials.module.css";
-import { FaInstagram, FaYoutube, FaDiscord, FaLinkedin, FaXTwitter } from "react-icons/fa6";
-import { FaTiktok } from "react-icons/fa";
 import { useSiteData } from "../../hooks/useSiteData";
 
-// Map siteData keys → icons + display names
-const SOCIAL_ICON_MAP = {
-  x: { name: "X (Twitter)", icon: <FaXTwitter /> },
-  instagram: { name: "Instagram", icon: <FaInstagram /> },
-  linkedin: { name: "LinkedIn", icon: <FaLinkedin /> },
-  discord: { name: "Discord", icon: <FaDiscord /> },
-  tiktok: { name: "TikTok", icon: <FaTiktok /> },
-  youtube: { name: "YouTube", icon: <FaYoutube /> },
+// Map siteData keys → display names
+const SOCIAL_NAME_MAP = {
+  x: "X (Twitter)",
+  instagram: "Instagram",
+  linkedin: "LinkedIn",
+  discord: "Discord",
+  tiktok: "TikTok",
+  youtube: "YouTube",
 };
 
 const Socials = () => {
@@ -18,29 +16,24 @@ const Socials = () => {
 
   if (loading || !siteData) return null;
 
-  // Filter: remove "merch" and any unknown keys
   const socialEntries = Object.entries(siteData).filter(
-    ([key]) => key !== "merch" && SOCIAL_ICON_MAP[key]
+    ([key]) => key !== "merch" && SOCIAL_NAME_MAP[key]
   );
 
   return (
-    <div className={styles.socialsContainer}>
-      {socialEntries.map(([key, url]) => {
-        const { name, icon } = SOCIAL_ICON_MAP[key];
-
-        return (
+    <ul className={styles.socialsList}>
+      {socialEntries.map(([key, url]) => (
+        <li key={key}>
           <a
-            key={key}
             href={url}
             target="_blank"
             rel="noopener noreferrer"
-            className={styles.socialLink}
           >
-            <span className={styles.icon}>{icon}</span>
+            {SOCIAL_NAME_MAP[key]}
           </a>
-        );
-      })}
-    </div>
+        </li>
+      ))}
+    </ul>
   );
 };
 

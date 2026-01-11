@@ -1,26 +1,18 @@
-.socialsContainer {
-  display: flex;
-  gap: 35px;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-end;
-  margin-bottom: 50px;
-  margin-top: 20px;
+.socialsList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.socialLink {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  transition: transform 0.2s ease, background 0.2s ease;
-  color: #ffffff;
-  font-weight: 500;
+.socialsList li {
+    margin-bottom: 0.5rem;
 }
 
-.socialLink:hover {
-  transform: scale(1.05)
+.socialsList a {
+    text-decoration: none;
+    transition: opacity 0.2s ease;
 }
 
-.icon {
-  font-size: 40px;
+.socialsList a:hover {
+    opacity: 0.7;
 }

@@ -1,83 +1,69 @@
 .container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
-.committee
-{
+.committee {
   max-width: var(--max-width);
+  margin: 0 auto;
 }
 
-.heading {
-  font-size: 4rem;
+.pageTitle {
+  font-size: 3rem;
   font-weight: 700;
+  text-align: start;
+  margin-bottom: 4rem;
+}
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.sectionTitle {
+  font-size: 1.75rem;
+  font-weight: 600;
   margin-bottom: 2rem;
-  text-align: center;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 2rem;
 }
 
-@media (min-width: 640px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
 .card {
-  border: 1px solid #e5e7eb;
-  padding: 1rem;
-  background-color: white;
-  color: black;
-}
-
-.card:hover {
+  text-align: start;
 }
 
 .cardImage {
   width: 100%;
-  height: 12rem;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
-  border-radius: 0.5rem;
   margin-bottom: 1rem;
 }
 
 .name {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  color: black;
+  margin-bottom: 0px;
 }
 
 .role {
-  color: #000000;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-bottom: 0.75rem;
+  margin-top: 6px;
 }
 
 .socialLinks {
-  margin-top: 0.5rem;
   display: flex;
+  justify-content: flex-start;
   gap: 0.75rem;
 }
 
 .socialLink {
+  font-size: 0.85rem;
   text-decoration: none;
 }
 
-.linkedin {
-  color: #0A66C2;
-}
-
-.github {
-  color: #1F2937;
+.loading {
+  text-align: center;
 }

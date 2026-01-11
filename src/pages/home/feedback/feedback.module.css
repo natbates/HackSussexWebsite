@@ -2,36 +2,34 @@
 .container
 {
     width: 100%;
-    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: var(--max-width);
+    width: 100%;
 }
 
 .feedbackForm
 {
     display: flex;
     flex-direction: column;
-    max-width: var(--max-width);
     width: 100%;
-    background-color: white;
 }
 
 .feedbackForm h1 {
-  text-align: center;
+  text-align: start;
   margin-bottom: 10px;
   font-size: 1.8rem;
-  color: #333;
 }
 
 .feedbackForm textarea {
   width: 100%;
-  min-height: 120px;
   padding: 10px;
-  border-radius: 6px;
   border: 1px solid #ccc;
+  background-color: transparent;
   resize: vertical;
+  margin-bottom: 20px;
   font-size: 1rem;
 }
 
@@ -51,6 +49,5 @@
 
 .feedbackForm .alreadySubmitted {
   text-align: center;
-  color: #555;
   font-style: italic;
 }

@@ -6,66 +6,77 @@ import Event from "../../../components/event/event";
 
 const UpcomingEvents = () => {
   const { events, sponsors, loading } = useSiteData();
-  const [timers, setTimers] = useState({});
-  const ticketsClosed = false;
 
-  // Set up countdown timers
+  /**
+   * timers = {
+   *   [eventId]: {
+   *     text: string,
+   *     closed: boolean
+   *   }
+   * }
+   */
+  const [timers, setTimers] = useState({});
+
   useEffect(() => {
     if (!events?.upcomingEvents) return;
 
     const interval = setInterval(() => {
-      const newTimers = {};
+      const updatedTimers = {};
 
       events.upcomingEvents.forEach((event) => {
         const eventDate = new Date(event.date);
-        const targetDate = new Date(eventDate.getTime() - 7 * 24 * 60 * 60 * 1000); // 1 week before
+        const cutoffDate = new Date(
+          eventDate.getTime() - 7 * 24 * 60 * 60 * 1000
+        );
 
         const now = Date.now();
-        const diff = targetDate - now;
+        const diff = cutoffDate - now;
 
         if (diff <= 0) {
-          newTimers[event.id] = "Tickets Closed";
-          ticketsClosed = true;
-        } else {
-          const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-          const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-          const minutes = Math.floor((diff / (1000 * 60)) % 60);
-          const seconds = Math.floor((diff / 1000) % 60);
-
-          newTimers[event.id] = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+          updatedTimers[event.id] = {
+            text: "Tickets Closed",
+            closed: true,
+          };
+          return;
         }
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((diff / (1000 * 60)) % 60);
+        const seconds = Math.floor((diff / 1000) % 60);
+
+        updatedTimers[event.id] = {
+          text: `${days}d ${hours}h ${minutes}m ${seconds}s`,
+          closed: false,
+        };
       });
 
-      setTimers(newTimers);
+      setTimers(updatedTimers);
     }, 1000);
 
     return () => clearInterval(interval);
   }, [events]);
 
-  if (loading) return <p className={styles.loading}>{messages.loadingText}</p>;
+  if (loading) {
+    return <p className={styles.loading}>{messages.loadingText}</p>;
+  }
 
-  if (!events.upcomingEvents || events.upcomingEvents.length === 0) {
+  if (!events?.upcomingEvents?.length) {
     return <div className={styles.container}></div>;
   }
 
   return (
     <div className={styles.container}>
       <div className={styles.upComingEvent}>
-        <img
-          className={styles.mlhBanner}
-          src="https://s3.amazonaws.com/logged-assets/trust-badge/2026/mlh-trust-badge-2026-white.svg"
-        />
-
-        <h1 className={styles.pageTitle}>{messages.pageTitle.toUpperCase()}</h1>
+        <h1 className={styles.pageTitle}>{messages.pageTitle}</h1>
 
         {events.upcomingEvents.map((event) => (
-          <div key={event.id} className={styles.eventWrapper}>
-            <Event event={event} sponsors={sponsors} ticketsClosed={ticketsClosed}/>
-            {!ticketsClosed ? 
-            <p className={styles.countdown}>
-              {timers[event.id]}
-            </p> : <p className={styles.countdown}>Tickets Closed</p>}
-          </div>
+          <Event
+            key={event.id}
+            event={event}
+            sponsors={sponsors}
+            timer={timers[event.id]}
+          />
         ))}
       </div>
     </div>

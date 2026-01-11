@@ -1,18 +1,15 @@
 
 .container
 {
-    background-color: white;
     display: flex;
     justify-content: center;
     width: 100%;
+    max-width: var(--max-width);
 }
 
 .videoContainer {
   width: 100%;
-  max-width: var(--max-width);
-  border-radius: 10px;
   overflow: hidden;
-  padding-bottom: 80px;
 }
 
 .videoContainer div

@@ -2,12 +2,16 @@
 {
     --white: #ffffff;
     --text-colour: #ffffff;
-    --secondary-text-colour: #1f1f1f;
-    --background-colour: #04bcff;
+    --secondary-text-colour: #ffffff;
+    --background-colour: #161616;
     --accent-colour: #04bcff;
     --footer-background: #ffffff;
-    --container-colour: #88d7ff;
+    --container-colour: #222222;
     --max-width: 1200px;
+    --border-radius: 20px;
+    --lime: #8bda94;
+    --teal: #5dcad1;
+    --blue: #3498db;
 }
 
 /* [data-theme="light"] {
@@ -21,9 +25,11 @@
     color: var(--text-colour);
 }
 
-h1, h2, h3
+h1, h2, h3, h4, h5
 {
-    font-weight: bolder !important;
+    font-family: "Source";
+    font-size: 3rem;
+    font-weight: 700;
 }
 
 html
@@ -38,26 +44,8 @@ html
 body
 {
     margin: 0;
-}
-
-.background-grid
-{
-    position: fixed;
-    background-image: url("/src/assets/backgrounds/pngegg.png");
-    background-repeat: repeat;
-    z-index: -2;
-    filter: brightness(0) invert(1);
-    width: 100%;
-    background-size: 80vw;
-    height: 100%;
-    opacity: 0.4;
-}
-
-.background-grid.container
-{
-    position: absolute;
-    top: 0;
-    z-index: 0;
+    background-image: url("/src/assets/backgrounds/paper\ texture.png");
+    background-size: 200px;
 }
 
 *
@@ -79,6 +67,8 @@ body
 {
     width: 100dvw;
     flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .button-container
@@ -87,26 +77,53 @@ body
     gap: 20px;
 }
 
-button {
-    display: inline-block;
-    background-color: white;
-    color: rgb(0, 0, 0);
-    border: none;
-    height: fit-content;
-    width: fit-content;
-    text-decoration: none;
-    padding: 0.75rem 1.25rem;
-    transition: background-color 0.3s;
-    outline: 1px solid var(--white);
-    transition: transform 0.3s ease;
-    z-index: 5;
-    cursor: pointer;
-    text-wrap: nowrap;
+.hs-logo
+{
+    position: fixed;
+    left: 30;
+    top: 30;
+    filter: brightness(0) invert(1);
+    width: 100px;
 }
 
-/* button:hover {
+button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    background-color: transparent;
+    color: var(--text-colour);
+    padding: 0.45rem 1.25rem;
+    border: 2px solid var(--white);
+    border-radius: 40px;
+    cursor: pointer;
+    white-space: nowrap;
+    width: fit-content;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+button::after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-color: currentColor;
+
+    mask: url("../../src/assets/misc/arrow.svg") no-repeat center;
+    mask-size: contain;
+
+    display: inline-block;
+}
+
+button:hover {
     transform: scale(1.05);
-} */
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(0, 0, 0);
+    color: black;
+}
+
 
 input, textarea
 {
@@ -114,6 +131,14 @@ input, textarea
 }
 
 @font-face {
-    font-family: "Milker";
-    src: url("../../public/fonts/Milker.otf");
+    font-family: "Source";
+    src: url("../../public/fonts/SourceCodePro-VariableFont_wght.ttf");
+}
+
+
+@media (max-width: 1700px) {
+    .hs-logo
+    {
+        display: none;
+    }
 }

@@ -11,7 +11,6 @@ const messages = {
         phone: "", 
     },
 
-    quickLinksTitle: "Quick Links",
     quickLinks: [
         { label: "Home", href: "/" },
         { label: "Events", href: "/events" },
@@ -20,7 +19,6 @@ const messages = {
         { label: "About Us", href: "/about" },
     ],
 
-    eventTypesTitle: "Event Types",
     eventTypes: [
         { label: "Hackathons", href: "/events#hackathons" },
         { label: "Workshops", href: "/events#workshops" },
