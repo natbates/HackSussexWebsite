@@ -47,7 +47,7 @@
 }
 
 .logo {
-  height: 30px;
+  height: 23px;
   cursor: pointer;
 }
 
@@ -60,8 +60,8 @@
   opacity: 0;
   pointer-events: none;
   transform: translateY(-5px);
-  transition: 0.25s;
-  padding: 10 0px;
+  transition: all 0.25s;
+  padding: 10px 0;
   border-radius: var(--border-radius);
 }
 
@@ -76,7 +76,7 @@
   padding: 0.6rem 1rem;
   color: black;
   text-decoration: none;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .ticketBtn {
@@ -84,7 +84,6 @@
   padding: 0.5rem 1rem;
   border-radius: 8px;
 }
-
 
 .hamburger {
   display: none;
@@ -95,57 +94,71 @@
   cursor: pointer;
 }
 
-.mobileMenu {
+.mobileControls {
   display: none;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;
 }
 
-/* Mobile styles */
+.mobileMenu {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  gap: 1rem;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+
+.mobileMenu.open {
+  max-height: 1000px;
+  opacity: 1;
+  margin-bottom: 30px;
+}
+
+.mobileItem {
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.mobileItem a
+{
+  text-decoration: none;
+}
+
+.mobileSubItem {
+  white-space: nowrap;
+}
+
 @media (max-width: 900px) {
   .rightContainer {
     display: none;
   }
 
+  .mobileControls {
+    display: flex;
+  }
+
   .hamburger {
     display: block;
-    margin-left: auto;
-    padding: 0;
-  }
-
-  .mobileMenu {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .mobileItem a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
-  }
-
-  .mobileSubItem {
-    margin-left: 1rem;
-    opacity: 0.8;
-  }
-
-  .mobileTicketBtn {
-    margin-top: 1rem;
-    padding: 0.75rem;
-    border-radius: 8px;
-    background: white;
-    font-weight: 600;
   }
 }
 
 @media (max-width: 1370px) {
-    .navbarContainer {
-        padding: 0 40px;
-    }
+  .navbarContainer {
+    padding: 0 40px;
+  }
 }
 
 @media (max-width: 480px) {
-  .navbarContainer
-  {
-    padding: 0px 15px;
+  .navbarContainer {
+    padding: 0 15px;
   }
 }

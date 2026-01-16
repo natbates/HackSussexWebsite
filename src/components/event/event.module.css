@@ -165,3 +165,39 @@
     height: auto;
   }
 }
+
+@media (max-width: 1050px) {
+  .simpleButtons
+  {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 765px) {
+  .simpleCard
+  {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+  }
+
+  .simpleDetails
+  {
+    width: 100%;
+    padding: 0;
+  }
+
+  .simpleImage
+  {
+    width: 150px;
+    height: 150px;
+  }
+
+  .simpleButtons
+  {
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}

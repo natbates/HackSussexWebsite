@@ -3,7 +3,6 @@ import { useSiteData } from "../../hooks/useSiteData";
 import {
   FaXTwitter,
   FaInstagram,
-  FaLinkedin,
   FaDiscord,
   FaTiktok,
   FaYoutube,
@@ -18,10 +17,6 @@ const SOCIAL_CONFIG = {
   instagram: {
     label: "Instagram",
     icon: <FaInstagram />,
-  },
-  linkedin: {
-    label: "LinkedIn",
-    icon: <FaLinkedin />,
   },
   discord: {
     label: "Discord",
