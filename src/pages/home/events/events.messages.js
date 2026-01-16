@@ -1,13 +1,13 @@
 import { FaCode, FaGamepad, FaTrophy, FaLaptopCode } from "react-icons/fa";
 
-import Hackathons from "../../../assets/gallery/hackathon_10y7zw.jpg";
-import GameJams from "../../../assets/gallery/gamejam_2tr2hu.jpg";
-import Workshops from "../../../assets/gallery/pawnSussex_hfjot2.jpg";
-import CodersCup from "../../../assets/gallery/codersCup_2a6lfl.jpg";
+import Hackathons from "../../../assets/gallery/IMG_1398.jpg";
+import GameJams from "../../../assets/gallery/IMG_1399.jpg";
+import Workshops from "../../../assets/gallery/IMG_1394.jpg";
+import CodersCup from "../../../assets/gallery/codersCup_kf3z4x.jpg";
 
 const messages = {
   pageTitle: "Our most popular events",
-
+  description: "Check out some of our most popular events",
   eventTypes: [
     {
       id: "hackathons",
@@ -26,10 +26,10 @@ const messages = {
         "Create games under time pressure with unique themes and challenges.",
     },
     {
-      id: "workshops",
+      id: "pwnsussex",
       icon: FaCode,
       image: Workshops,
-      title: "Workshops",
+      title: "PwnSussex",
       description:
         "Hands-on learning events led by industry professionals and experienced mentors.",
     },

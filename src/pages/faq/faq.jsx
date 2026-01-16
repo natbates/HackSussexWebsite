@@ -3,19 +3,24 @@ import styles from "./faq.module.css";
 import messages from "./faq.messages";
 
 const FAQ = () => {
-  const [openId, setOpenId] = useState(null);
+  const [openIds, setOpenIds] = useState([]); // <-- array now
 
   const toggleFAQ = (id) => {
-    setOpenId((prev) => (prev === id ? null : id));
+    setOpenIds((prev) =>
+      prev.includes(id)
+        ? prev.filter((openId) => openId !== id) // close
+        : [...prev, id] // open
+    );
   };
 
   return (
     <section className={styles.container}>
       <h1 className={styles.heading}>{messages.pageTitle}</h1>
+      <p dangerouslySetInnerHTML={{ __html: messages.description }} />
 
       <div className={styles.faqList}>
         {messages.faqs.map((faq) => {
-          const isOpen = openId === faq.id;
+          const isOpen = openIds.includes(faq.id);
 
           return (
             <div key={faq.id} className={styles.faqItem}>
@@ -24,16 +29,22 @@ const FAQ = () => {
                 onClick={() => toggleFAQ(faq.id)}
               >
                 <span>{faq.question}</span>
-                <span className={`${styles.arrow} ${isOpen ? styles.open : ""}`}>
+                <span
+                  className={`${styles.arrow} ${
+                    isOpen ? styles.open : ""
+                  }`}
+                >
                   ▾
                 </span>
               </button>
 
-              {isOpen && (
-                <div className={styles.answer}>
-                  <p>{faq.answer}</p>
-                </div>
-              )}
+              <div
+                className={`${styles.answer} ${
+                  isOpen ? styles.open : ""
+                }`}
+              >
+                <p>{faq.answer}</p>
+              </div>
             </div>
           );
         })}

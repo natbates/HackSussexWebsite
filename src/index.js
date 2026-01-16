@@ -8,6 +8,7 @@ import { BrowserRouter } from "react-router-dom";
 import { SiteDataProvider } from "./contexts/siteContext";
 import { ThemeProvider } from "./contexts/themeContext";
 
+
 root.render(
     <React.StrictMode>
         <BrowserRouter>

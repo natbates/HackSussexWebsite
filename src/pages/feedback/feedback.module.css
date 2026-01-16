@@ -1,0 +1,33 @@
+
+.container
+{
+    width: 100%;
+    max-width: var(--max-width);
+}
+
+.feedbackForm
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.inputContainer
+{
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.feedbackForm h1 {
+  text-align: start;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.feedbackForm input {
+  width: 100%;
+}
+

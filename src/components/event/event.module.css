@@ -1,10 +1,67 @@
+.eventWrapper {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+/* Full Event Card */
 .eventCard {
   display: flex;
   flex-direction: row-reverse;
-  transition: transform 0.3s ease;
   gap: 20px;
+  padding: 20px;
+
+  border-radius: var(--border-radius);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  background: rgba(255, 255, 255, 0.023);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
+/* Simple Design Card */
+.simpleCard {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+
+  border-radius: var(--border-radius);
+  transition: transform 0.2s ease;
+
+  background: rgba(255, 255, 255, 0.023);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Columns for simple card */
+.simpleImage {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.simpleDetails {
+  flex: 1;
+  padding: 0 1rem;
+}
+
+.simpleButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+/* Shared styles */
 .imageWrapper {
   width: 40%;
   overflow: hidden;
@@ -18,23 +75,24 @@
   background-color: ghostwhite;
 }
 
-.logo
-{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    z-index: 1;
+.logo {
+  width: 100%;
+  height: fit-content;
+  object-fit: contain;
+  z-index: 1;
+  max-height: 300px;
 }
 
-.countdown
-{
+.countdown {
   margin-bottom: 0;
-  color: #ff574b;
+  color: rgb(240, 91, 91);
 }
 
 .content {
   width: 60%;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 .eventTitle {
@@ -54,14 +112,9 @@
 
 .description {
   margin-bottom: 0.3rem;
+  margin-top: 0;
   line-height: 1.5;
-}
-
-.bottomLine {
-  display: flex;
-  align-items: flex-end;
-  gap: 50px;
-  justify-content: space-between;
+  flex-grow: 1;
 }
 
 .sponsors {}
@@ -97,11 +150,18 @@
   gap: 1rem;
   width: 100%;
   justify-content: flex-start;
-  margin-top: 15px;
+  flex-wrap: wrap;
 }
 
-.buttons button
-{
-  background-color: var(--background-colour);
-  color: white;
+@media (max-width: 740px) {
+  .eventCard
+  {
+    flex-direction: column;
+  }
+
+  .imageWrapper, .content
+  {
+    width: 100%;
+    height: auto;
+  }
 }

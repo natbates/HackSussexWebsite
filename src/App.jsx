@@ -16,9 +16,18 @@ import Sponsors from "./pages/sponsors/sponsors";
 import Gallery from "./pages/gallery/gallery";
 import Events from "./pages/events/events";
 import FAQ from "./pages/faq/faq";
+import Feedback from "./pages/feedback/feedback";
 
-import HSLogo from "../src/assets/hackSussex/gradient.png";
+import Contact from "./pages/contact/contact";
+import PrivacyPolicy from "./pages/privacy-policy/privacyPolicy";
+import EventSchedule from "./components/event/schedule/eventSchedule";
 
+import Hackathon from "./pages/events/hackathons/hackathons";
+import GameJam from "./pages/events/gamejams/gamejams";
+import PwnSussex from "./pages/events/pwnsussex/pwnsussex";
+import CodersCup from "./pages/events/coderscup/coderscup";
+
+import LeafBorder from "./components/border/leafBorder";
 
 const App = () => {
     const { loading } = useSiteData();
@@ -33,7 +42,8 @@ const App = () => {
 
     return (
         <div className="page-container">
-            <img src={HSLogo} className="hs-logo"></img>
+            <LeafBorder side="left" />
+            <LeafBorder side="right" />
             <div className="background-grid"></div>
             <Navbar />
             <div className="page-content">
@@ -45,6 +55,17 @@ const App = () => {
                     <Route path="/gallery" element={<Gallery />} />
                     <Route path="/events" element={<Events />} />
                     <Route path="/faq" element={<FAQ />} />
+                    <Route path="/feedback" element={<Feedback />} />
+                    <Route path="/schedules/:eventId" element={<EventSchedule />} />
+
+                    <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                    <Route path="/contact" element={<Contact />} />
+
+                    <Route path="/events/hackathons" element={<Hackathon />} />
+                    <Route path="/events/pwnsussex" element={<PwnSussex />} />
+                    <Route path="/events/gamejams" element={<GameJam />} />
+                    <Route path="/events/coderscup" element={<CodersCup />} />
+
 
                     <Route path="*" element={<NotFound />} />
                 </Routes>

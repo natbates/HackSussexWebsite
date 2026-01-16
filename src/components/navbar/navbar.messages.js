@@ -3,16 +3,16 @@ const messages = {
   mlhBadgeHref:
     "https://mlh.io/eu?utm_source=eu-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=white",
   links: [
-    { name: "Home", path: "/" },
     {
       name: "Events",
       path: "/events",
-      // dropdown: [
-      //   { name: "Hackathon", path: "/events/hackathon" },
-      //   { name: "Workshops", path: "/events/workshops" },
-      //   { name: "Talks", path: "/events/talks" },
-      //   { name: "Mini Events", path: "/events/mini-events" }
-      // ]
+      dropdown: [
+        { name: "All Events", path: "/events" },
+        { name: "Hackathon", path: "/events/hackathons" },
+        { name: "Game Jams", path: "/events/gamejams" },
+        { name: "Coders Cup", path: "/events/coderscup" },
+        { name: "PwnSussex", path: "/events/pwnsussex" }
+      ]
     },
 
     { name: "Gallery", path: "/gallery" },

@@ -1,44 +1,39 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  max-width: var(--max-width);
+  flex-direction: column;
+}
 
-.container
+.videoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.heading
 {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    max-width: var(--max-width);
-}
-
-.videoContainer {
+  text-align: start;
   width: 100%;
-  overflow: hidden;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
-.videoContainer div
-{
-    width: 100%;
-}
-
-.videoContainer iframe {
+.videoGrid iframe {
   width: 100%;
-  aspect-ratio: 16 / 9; /* maintains 16:9 ratio */
-  border: 0;
-  display: block;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
-.thumbnailWrapper {
-  position: relative;
-  cursor: pointer;
-}
-
-.thumbnail {
-  width: 100%;
-  display: block;
-}
-
-.playButton {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 60px;
-  opacity: 0.7;
+@media (max-width: 768px) {
+  .videoGrid {
+    grid-template-columns: 1fr;
+  }
 }

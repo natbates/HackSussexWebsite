@@ -1,20 +1,36 @@
 .container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  width: 100%;
 }
 
 .committee {
-  max-width: var(--max-width);
-  margin: 0 auto;
+  width: 100%;
 }
 
-.pageTitle {
-  font-size: 3rem;
-  font-weight: 700;
+.title {
   text-align: start;
-  margin-bottom: 4rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.ctaText
+{
+  margin-bottom: 0;
 }
 
 .section {
   margin-bottom: 4rem;
+}
+
+.committeeTopLine
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 30px;
+  gap: 20px;
 }
 
 .sectionTitle {
@@ -31,6 +47,14 @@
 
 .card {
   text-align: start;
+  border-radius: var(--border-radius);
+  background: rgba(255, 255, 255, 0.023);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 .cardImage {
@@ -38,6 +62,7 @@
   aspect-ratio: 1 / 1;
   object-fit: cover;
   margin-bottom: 1rem;
+  border-radius: var(--border-radius);
 }
 
 .name {
@@ -53,10 +78,17 @@
   margin-top: 6px;
 }
 
+.socialButton
+{
+  font-size: 1rem;
+  padding: 10px 15px;
+  margin-top: 10px;
+}
+
 .socialLinks {
   display: flex;
-  justify-content: flex-start;
-  gap: 0.75rem;
+  justify-content: flex-end;
+  gap: 0.5rem;
 }
 
 .socialLink {
@@ -66,4 +98,13 @@
 
 .loading {
   text-align: center;
+}
+
+
+@media (max-width: 780px) {
+  .committeeTopLine
+  {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

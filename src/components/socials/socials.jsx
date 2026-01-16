@@ -1,14 +1,40 @@
 import styles from "./socials.module.css";
 import { useSiteData } from "../../hooks/useSiteData";
+import {
+  FaXTwitter,
+  FaInstagram,
+  FaLinkedin,
+  FaDiscord,
+  FaTiktok,
+  FaYoutube,
+} from "react-icons/fa6";
 
-// Map siteData keys → display names
-const SOCIAL_NAME_MAP = {
-  x: "X (Twitter)",
-  instagram: "Instagram",
-  linkedin: "LinkedIn",
-  discord: "Discord",
-  tiktok: "TikTok",
-  youtube: "YouTube",
+// Map siteData keys → label + icon
+const SOCIAL_CONFIG = {
+  x: {
+    label: "X (Twitter)",
+    icon: <FaXTwitter />,
+  },
+  instagram: {
+    label: "Instagram",
+    icon: <FaInstagram />,
+  },
+  linkedin: {
+    label: "LinkedIn",
+    icon: <FaLinkedin />,
+  },
+  discord: {
+    label: "Discord",
+    icon: <FaDiscord />,
+  },
+  tiktok: {
+    label: "TikTok",
+    icon: <FaTiktok />,
+  },
+  youtube: {
+    label: "YouTube",
+    icon: <FaYoutube />,
+  },
 };
 
 const Socials = () => {
@@ -17,21 +43,24 @@ const Socials = () => {
   if (loading || !siteData) return null;
 
   const socialEntries = Object.entries(siteData).filter(
-    ([key]) => key !== "merch" && SOCIAL_NAME_MAP[key]
+    ([key]) => key !== "merch" && SOCIAL_CONFIG[key]
   );
 
   return (
     <ul className={styles.socialsList}>
       {socialEntries.map(([key, url]) => (
-        <li key={key}>
           <a
+            key={url}
             href={url}
             target="_blank"
             rel="noopener noreferrer"
+            className={styles.socialLink}
+            aria-label={SOCIAL_CONFIG[key].label}
           >
-            {SOCIAL_NAME_MAP[key]}
+            <span className={styles.icon}>
+              {SOCIAL_CONFIG[key].icon}
+            </span>
           </a>
-        </li>
       ))}
     </ul>
   );

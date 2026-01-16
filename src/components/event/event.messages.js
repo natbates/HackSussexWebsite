@@ -1,7 +1,9 @@
-const eventMessages = {
-  sponsorsTitle: "Sponsors",
-  ticketsBtnText: "Get Tickets",
+const messages = {
+  sponsorsTitle: "Our Sponsors",
   calendarBtnText: "Add to Calendar",
+  ticketsBtnText: "Get Tickets",
+  ticketsClosedText: "Tickets Closed",
+  scheduleBtnText: "See Schedule",
 };
 
-export default eventMessages;
+export default messages;

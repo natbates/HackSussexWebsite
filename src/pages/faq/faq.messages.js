@@ -1,42 +1,61 @@
 const messages = {
   pageTitle: "Frequently Asked Questions",
+  description: `If you don’t find an answer to your question here, please feel free to reach out to us via our <a href="/contact">Contact Page</a>. We’ll get back to you as soon as possible!`,
 
   faqs: [
     {
-      id: "what-is-hack-sussex",
-      question: "What is Hack Sussex?",
+      id: "since-when-active",
+      question: "Since when has HackSussex been active?",
       answer:
-        "Hack Sussex is a student-led tech society that runs hackathons, workshops, game jams, and other creative coding events throughout the year.",
+        "HackSussex has been an active student-led society since 2012.",
     },
     {
-      id: "who-can-attend",
-      question: "Who can attend your events?",
+      id: "types-of-events",
+      question: "What types of events and activities do you organise?",
       answer:
-        "Our events are open to students of all skill levels. Whether you're a complete beginner or an experienced developer, everyone is welcome.",
+        "We organise a range of events including hackathons, programming competitions, workshops, and networking sessions.",
     },
     {
-      id: "do-i-need-a-team",
-      question: "Do I need a team to participate?",
+      id: "collaborations",
+      question: "Who has the society collaborated with over the years?",
       answer:
-        "No! You can join solo and form a team at the event. We usually run team-forming sessions at the start.",
+        "We have collaborated with a wide range of organisations including GitHub, BCS – The Chartered Institute for IT, Teach First, EDF, Overleaf, and many more.",
     },
     {
-      id: "what-should-i-bring",
-      question: "What should I bring to a hackathon?",
+      id: "how-to-contact",
+      question: "How can I get in touch?",
       answer:
-        "Bring your laptop, charger, student ID, and enthusiasm! We provide food, Wi-Fi, and a great environment.",
+        "You can contact us by emailing contact@hacksussex.com or via our contact page.",
     },
     {
-      id: "is-it-free",
-      question: "Are your events free?",
+      id: "what-happens-at-hackathon",
+      question: "What typically happens at one of your 24-hour hackathons?",
       answer:
-        "Most of our events are completely free thanks to our amazing sponsors. Some special events may require a small ticket fee.",
+        "During the 24-hour hacking window, we run a mixture of sponsor-led workshops and social activities. We also provide all meals, catered by amazing Brighton-based food vendors.",
     },
     {
-      id: "how-do-i-sponsor",
-      question: "How can a company sponsor Hack Sussex?",
+      id: "competitive-or-laid-back",
+      question: "Are your events suitable for both competitive and laid-back individuals?",
       answer:
-        "You can reach out via our sponsorship contact page. We offer branding, recruitment opportunities, and direct engagement with students.",
+        "Absolutely. Our events cater to both competitive participants and those who prefer a more relaxed, exploratory experience.",
+    },
+    {
+      id: "skills-and-experience",
+      question: "What can participants expect to gain from an event?",
+      answer:
+        "Participants can develop skills in programming, robotics, teamwork, and industry networking.",
+    },
+    {
+      id: "rules-and-conduct",
+      question: "What rules are in place for your events?",
+      answer:
+        "All of our events follow the Hackathons UK Code of Conduct to ensure a safe and inclusive environment for everyone.",
+    },
+    {
+      id: "cost",
+      question: "Are there any costs associated with attending a HackSussex event?",
+      answer:
+        "No. All HackSussex events are completely free for participants.",
     },
   ],
 };

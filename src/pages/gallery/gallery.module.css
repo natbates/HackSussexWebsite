@@ -5,19 +5,20 @@
 }
 
 .heading {
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 2rem;
+  text-align: start;
+  font-size: 2.5rem;
   font-weight: 700;
+  margin-bottom: 20px;
 }
 
 /* Category filter buttons */
 .filters {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 1rem;
   margin-bottom: 2rem;
   flex-wrap: wrap;
+  margin-top: 30px;
 }
 
 .filters button
@@ -41,6 +42,9 @@
   overflow: hidden;
   border: 1px solid var(--container-border-colour);
   display: flex;
+  cursor: pointer;
+  background: none;
+  padding: 0;
 }
 
 .image {
@@ -48,6 +52,7 @@
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s;
+  border-radius: var(--border-radius);
 }
 
 .image:hover {
@@ -57,7 +62,7 @@
 .pagination {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 1rem;
   width: 100%;
   margin-top: 3rem;
@@ -80,4 +85,52 @@
     flex-direction: column;
     align-items: center;
   }
+}
+
+/* OVERLAY */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: grid;
+  place-items: center;
+  z-index: 1000;
+
+  animation: fadeIn 0.25s ease;
+}
+
+.overlayImage {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: var(--border-radius);
+  animation: scaleIn 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Close button */
+.close {
+  position: fixed;
+  top: 20px;
+  right: 24px;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.close:hover {
+  opacity: 1;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.96); }
+  to { transform: scale(1); }
 }

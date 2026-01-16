@@ -1,7 +1,5 @@
 PLEASE GIT PULL TO GET MOST RECENT THINGS FOR DEV
 
-
-
 // doing
 
 - adding logos to events
@@ -10,20 +8,15 @@ PLEASE GIT PULL TO GET MOST RECENT THINGS FOR DEV
 
 // How this site works dynamically only using GitHub, no APIs or DB
 
-- 
+-
 
-ideas
+TO DO
 
-green to blue gradient
+- make home page look nicer
+- add event pages descriptions + images
+- mobile formatting
+- test all event cases, MAKE SHARED COMPONENT AND HEADER COMPONENTS
+- add scheudle and mlh toggle to dashboard
+- animations!!! hover effects!!
 
-white text
-
-repeating pattern background from insta
-
-embedded instagram videos
-
-cookies for data, sign up newletter bit?
-
-feedback form anonamous
-
-contact help form
+confirm and add page content

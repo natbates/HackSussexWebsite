@@ -3,14 +3,76 @@
     {
       "id": "evt_lp72u50x3w",
       "title": "Game Jam 2025",
-      "date": "2026-01-06T10:10:00.000Z",
+      "date": "2027-01-06T10:10:00.000Z",
       "location": "University of Sussex",
-      "description": "The Game Jam is back! Collaborating with many of the local studios surrounding Brighton to focus in on our Game Development and Design enthusiasts. Much like a hackathon, teams will be tasked with building a project to compete in tracks to inspire game design and win prizes.If you are looking for an opportunity to collaborate with others and experience trial and error throughout the game development process, this event would be a good match for you. Also, it will be great for those who are looking for a place to have exploration of new technologies in the realm of game development. The event is entirely free and paid for by our lovely sponsors. HackSussex GameJam 2025 is run in accordance with the MLH Code of Conduct.",
+      "description": "The Game Jam is back! Collaborating with many of the local studios surrounding Brighton to focus in on our Game Development and Design enthusiasts.",
       "sponsors": [],
       "logo": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/events/events_6iybejp1.png",
       "section": "upcomingEvents",
       "ticketsLink": "https://tickets.hacksussex.com/GameJam2025/",
-      "eventType": "Game Jam"
+      "eventType": "Game Jam",
+      "schedule": [
+        {
+          "day": "Day 1",
+          "items": [
+            {
+              "time": "10:00",
+              "title": "Doors Open",
+              "description": "Registration & breakfast"
+            },
+            {
+              "time": "10:30",
+              "title": "Opening Talk",
+              "description": "Welcome and briefing"
+            },
+            {
+              "time": "11:00",
+              "title": "Game Jam Begins"
+            },
+            {
+              "time": "13:00",
+              "title": "Lunch"
+            },
+            {
+              "time": "14:00",
+              "title": "Workshop: Game Mechanics"
+            },
+            {
+              "time": "17:00",
+              "title": "Check-in / Progress Update"
+            }
+          ]
+        },
+        {
+          "day": "Day 2",
+          "items": [
+            {
+              "time": "09:00",
+              "title": "Doors Open"
+            },
+            {
+              "time": "09:30",
+              "title": "Workshop: Level Design"
+            },
+            {
+              "time": "12:00",
+              "title": "Lunch"
+            },
+            {
+              "time": "13:00",
+              "title": "Game Jam Resumes"
+            },
+            {
+              "time": "16:00",
+              "title": "Final Presentations"
+            },
+            {
+              "time": "17:30",
+              "title": "Awards & Closing Remarks"
+            }
+          ]
+        }
+      ]
     }
   ],
   "pastEvents": []

@@ -2,35 +2,39 @@ import { useSiteData } from "../../hooks/useSiteData";
 import styles from "./sponsors.module.css";
 import messages from "./sponsors.messages";
 import { githubRawToLocal } from "../../util/githubRawToLocal";
+import { useNavigate } from "react-router-dom";
 
 const Sponsors = () => {
   const { sponsors, loading } = useSiteData();
 
   if (loading) return <p>{messages.loading}</p>;
 
-  const isHomePage = window.location.pathname === "/";
-
-  const selectedSponsors = isHomePage
-    ? sponsors?.filter((sponsor) =>
-        ["Hastings Direct", "BCS", "EDF", "Electric Square"].includes(
-          sponsor.name
-        )
-      )
-    : sponsors;
+  const navigate = useNavigate();
 
   return (
     <div className={styles.container}>
       <div className={styles.sponsors}>
-        <h1
-          className={styles.heading}
-          style={{ textAlign: isHomePage ? "center" : "start" }}
-        >
-          {isHomePage ? messages.homeTitle : messages.pageTitle}
-        </h1>
+        <div className={styles.sponsorsTopLine}>
+          <div className={styles.sponsorsText}>
+            <h1
+              className={styles.heading}
+            >{messages.title}
+            </h1>
+            <p className={styles.ctaText}>{messages.ctaText}</p>
+          </div>
+          <div className={styles.cta}>
+            <button
+              className="secondary"
+              onClick={() => navigate("/contact#sponsor")}
+            >
+              {messages.ctaButton}
+            </button>
+          </div>
+        </div>
         <div>
           <div className="background-grid container"></div>
           <div className={styles.grid}>
-            {selectedSponsors?.map((sponsor) => (
+            {sponsors?.map((sponsor) => (
               <div
                 key={sponsor.id}
                 className={styles.card}
@@ -46,16 +50,6 @@ const Sponsors = () => {
           </div>
         </div>
 
-        {/* CTA section */}
-        <div className={styles.cta}>
-          <p className={styles.ctaText}>{messages.ctaText}</p>
-          <button
-            className={styles.ctaButton}
-            onClick={() => window.open("/contact-sponsorship", "_blank")}
-          >
-            {messages.ctaButton}
-          </button>
-        </div>
       </div>
     </div>
   );

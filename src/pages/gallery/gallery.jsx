@@ -23,6 +23,7 @@ const IMAGES_PER_PAGE = 24;
 const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [currentPage, setCurrentPage] = useState(1);
+  const [activeImage, setActiveImage] = useState(null);
 
   // Categories
   const categories = Array.from(
@@ -35,7 +36,7 @@ const Gallery = () => {
       ? allImages
       : allImages.filter((img) => img.category === selectedCategory);
 
-  // Pagination math
+  // Pagination
   const totalPages = Math.ceil(filteredImages.length / IMAGES_PER_PAGE);
   const startIndex = (currentPage - 1) * IMAGES_PER_PAGE;
   const paginatedImages = filteredImages.slice(
@@ -43,20 +44,29 @@ const Gallery = () => {
     startIndex + IMAGES_PER_PAGE
   );
 
-  // Reset page when category changes
   useEffect(() => {
     setCurrentPage(1);
   }, [selectedCategory]);
 
+  // Close on ESC
+  useEffect(() => {
+    const onKey = (e) => {
+      if (e.key === "Escape") setActiveImage(null);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
+
   return (
     <div className={styles.container}>
       <h1 className={styles.heading}>{messages.title}</h1>
+      <p>{messages.description}</p>
 
       {/* Filters */}
       <div className={styles.filters}>
         <button
           onClick={() => setSelectedCategory("all")}
-          className={selectedCategory === "all" ? styles.active : ""}
+          className={selectedCategory === "all" ? styles.active : "secondary"}
         >
           {messages.allCategory}
         </button>
@@ -65,7 +75,7 @@ const Gallery = () => {
           <button
             key={cat}
             onClick={() => setSelectedCategory(cat)}
-            className={selectedCategory === cat ? styles.active : ""}
+            className={selectedCategory === cat ? styles.active : "secondary"}
           >
             {cat.charAt(0).toUpperCase() + cat.slice(1)}
           </button>
@@ -75,13 +85,17 @@ const Gallery = () => {
       {/* Grid */}
       <div className={styles.grid}>
         {paginatedImages.map((img) => (
-          <div key={img.src} className={styles.card}>
+          <button
+            key={img.src}
+            className={styles.card}
+            onClick={() => setActiveImage(img.src)}
+          >
             <img src={img.src} alt="" className={styles.image} />
-          </div>
+          </button>
         ))}
       </div>
 
-      {/* Pagination Controls */}
+      {/* Pagination */}
       {totalPages > 1 && (
         <div className={styles.pagination}>
           <button
@@ -102,6 +116,27 @@ const Gallery = () => {
             disabled={currentPage === totalPages}
           >
             Next
+          </button>
+        </div>
+      )}
+
+      {/* LIGHTBOX OVERLAY */}
+      {activeImage && (
+        <div
+          className={styles.overlay}
+          onClick={() => setActiveImage(null)}
+        >
+          <img
+            src={activeImage}
+            alt=""
+            className={styles.overlayImage}
+            onClick={(e) => e.stopPropagation()}
+          />
+          <button
+            className={styles.close}
+            onClick={() => setActiveImage(null)}
+          >
+            ✕
           </button>
         </div>
       )}

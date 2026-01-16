@@ -1,9 +1,12 @@
+import { useNavigate } from "react-router-dom";
 import { useSiteData } from "../../hooks/useSiteData";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import styles from "./committee.module.css";
 import messages from "./committee.messages";
 
 const Committee = () => {
   const { committee, loading } = useSiteData();
+  const navigate = useNavigate();
 
   if (loading) {
     return <p className={styles.loading}>{messages.loading}</p>;
@@ -32,24 +35,23 @@ const Committee = () => {
 
           <div className={styles.socialLinks}>
             {member.linkedin && (
-              <a
-                href={member.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.socialLink}
+              <button
+                className={styles.socialButton}
+                onClick={() => window.open(member.linkedin, "_blank")}
+                aria-label={`${member.name} LinkedIn`}
               >
-                LinkedIn
-              </a>
+                <FaLinkedinIn />
+              </button>
             )}
+
             {member.github && (
-              <a
-                href={member.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.socialLink}
+              <button
+                className={styles.socialButton}
+                onClick={() => window.open(member.github, "_blank")}
+                aria-label={`${member.name} GitHub`}
               >
-                GitHub
-              </a>
+                <FaGithub />
+              </button>
             )}
           </div>
         </div>
@@ -60,17 +62,24 @@ const Committee = () => {
   return (
     <section className={styles.container}>
       <div className={styles.committee}>
+        <div className={styles.committeeTopLine}>
+          <div className={styles.sponsorsText}>
+            <h1 className={styles.title}>{messages.title}</h1>
+            <p className={styles.ctaText}>{messages.ctaText}</p>
+          </div>
 
-        {/* Main Page Title */}
-        <h1 className={styles.pageTitle}>
-          {messages.pageTitle}
-        </h1>
+          <div className={styles.cta}>
+            <button
+              className="secondary"
+              onClick={() => navigate("/contact#committee")}
+            >
+              {messages.ctaButton}
+            </button>
+          </div>
+        </div>
 
         {/* Current Committee */}
         <div className={styles.section}>
-          <h2 className={styles.sectionTitle}>
-            {messages.currentCommitteeTitle}
-          </h2>
           {renderMembers(currentCommittee)}
         </div>
 
@@ -81,7 +90,6 @@ const Committee = () => {
           </h2>
           {renderMembers(pastCommittee)}
         </div>
-
       </div>
     </section>
   );

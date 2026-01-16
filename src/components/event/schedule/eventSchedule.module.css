@@ -1,0 +1,94 @@
+.container {
+  max-width: var(--max-width);
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.meta {
+  opacity: 0.7;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.ticketCta {
+    margin-top: 30px;
+}
+
+.bullets
+{
+    margin: 30px 0px;
+}
+
+.daysGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+  gap: 2rem;
+}
+
+.daySection {
+  margin-bottom: 2rem;
+  width: 500px;
+}
+
+.dayTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--container-border-colour);
+  border-radius: 12px;
+  background: transparent;
+  transition: transform 0.2s ease;
+  color: var(--text-colour);
+}
+
+.item:hover {
+  transform: translateY(-2px);
+}
+
+.time {
+  font-weight: 700;
+  height: fit-content;
+  font-size: 1rem;
+}
+
+.content h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1.1rem;
+}
+
+.content p {
+  margin: 0;
+  opacity: 0.8;
+  font-size: 0.95rem;
+}
+
+
+@media (max-width: 900px) {
+  .daysGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .daySection {
+    width: 100%;
+  }
+}

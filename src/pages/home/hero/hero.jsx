@@ -1,36 +1,37 @@
 import styles from "./hero.module.css";
 import messages from "./hero.messages";
 import Socials from "../../../components/socials/socials";
-import HackSussexLogo from "../../../assets/hackSussex/wideWhite.png"
+import HackSussexLogo from "../../../assets/hackSussex/logo.png";
+import MobileLogo from "../../../assets/hackSussex/gradient.png";
 
-import Image1 from "../../../assets/gallery/hackathon_nfgd20.jpg"
-import Image2 from "../../../assets/gallery/hackathon_0sirvt.jpg"
-import Image3 from "../../../assets/gallery/hackathon_nfnc6o.jpg"
+import NewsletterSignup from "../../../components/newsletter/newsletter";
+import MLHBanner from "../../../assets/misc/mlh-trust-badge-2026-white.svg"
+import { isMlhSeason } from "../../../config/settings";
 
 const Hero = () => {
     return (
         <div className={styles.hero}>
+            <h3 className={styles.welcomeTo}>{messages.welcomeText}</h3>
+            
+            {isMlhSeason && (
+                <img
+                    className={styles.mlhBanner}
+                    src={MLHBanner}
+                    onClick={() => window.open(messages.codeOfConductLink, "_blank")}
+                />
+            )}
 
-            <div className={styles.titleColumn}>
-
-                <div className={styles.imageGap}>
-                    <img src = {Image1} className={styles.image}></img>
-                    <img src = {Image2} className={styles.image}></img>
-                </div>
-
-                <p className={styles.welcomeTo}>{messages.welcomeText}</p>
-                <h1 className={styles.title}>{messages.title}</h1>
-                {/* <img src={HackSussexLogo}></img> */}
-
+            <div className={styles.logoContainer}>
+                <img className={styles.desktopLogo} src={HackSussexLogo} alt="Hack Sussex Logo" />
+                <img className={styles.mobileLogo} src={MobileLogo} alt="Hack Sussex Mobile Logo" />
             </div>
 
-            <div className={styles.descriptionColumn}>
-                <img src = {Image3} className={styles.image}></img>
-                <p className={styles.heroText}>{messages.description}</p>
-                <button>See Photos</button>
+            <p className={styles.description}>{messages.description}</p>
+            
+            <div className={styles.socialsNewsletterContainer}>
+                <Socials />
+                <NewsletterSignup />
             </div>
-
-
         </div>
     );
 };

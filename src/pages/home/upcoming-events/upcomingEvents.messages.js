@@ -1,5 +1,5 @@
 const upcomingEventsMessages = {
-  pageTitle: "Our upcoming Events!!",
+  heading: "Upcoming Events",
   noEventsTitle: "No upcoming events",
   noEventsText: "Check back soon for our next hackathon or workshop!",
   loadingText: "Loading upcoming events...",

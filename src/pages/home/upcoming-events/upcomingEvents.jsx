@@ -34,7 +34,6 @@ const UpcomingEvents = () => {
 
         if (diff <= 0) {
           updatedTimers[event.id] = {
-            text: "Tickets Closed",
             closed: true,
           };
           return;
@@ -67,8 +66,9 @@ const UpcomingEvents = () => {
 
   return (
     <div className={styles.container}>
+      <h1 className={styles.heading}>{messages.heading}</h1>
+      <p className={styles.description}>{messages.description}</p>
       <div className={styles.upComingEvent}>
-        <h1 className={styles.pageTitle}>{messages.pageTitle}</h1>
 
         {events.upcomingEvents.map((event) => (
           <Event

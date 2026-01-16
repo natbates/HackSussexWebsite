@@ -1,8 +1,9 @@
 .container {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   max-width: var(--max-width);
+  flex-direction: column;
 }
 
 .mlhBanner
@@ -14,26 +15,35 @@
   z-index: 3;
 }
 
-.pageTitle
-{
-    text-align: end;
-    margin-bottom: 1rem;
+.heading {
+  text-align: start;
+  width: 100%;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
-.pageDescription
-{
-    font-size: 1rem;
-    color: black;
-    text-align: start;
-    opacity: 0.8;
-    margin-top: 0;
-    margin-bottom: 30px;
-}
 
 .upComingEvent
 {
   position: relative;
   max-width: var(--max-width);
+  margin-top: 20px;
+}
+
+.upComingEvent::after
+{
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: rgb(240, 91, 91);
+  border-radius: 50%;
+  position: absolute;
+  top: -10;
+  right: -10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .loading,

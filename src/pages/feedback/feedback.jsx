@@ -30,7 +30,6 @@ const Feedback = () => {
 
       localStorage.setItem("feedbackSubmitted", "true");
       setSubmitted(true);
-      alert(messages.successAlert);
     } catch (err) {
       console.error("Error submitting feedback:", err);
       alert(messages.errorAlert);
@@ -57,18 +56,22 @@ const Feedback = () => {
       <form className={styles.feedbackForm} onSubmit={handleSubmit}>
         <h1>{messages.title}</h1>
         <p className={styles.description}>{messages.description}</p>
+    
+        <div className={styles.inputContainer}>
+          <input
+            type="text"
+            name="suggestion"
+            maxLength={128}
+            placeholder={messages.placeholder}
+            value={suggestion}
+            onChange={(e) => setSuggestion(e.target.value)}
+            required
+          />
 
-        <textarea
-          name="suggestion"
-          placeholder={messages.placeholder}
-          value={suggestion}
-          onChange={(e) => setSuggestion(e.target.value)}
-          required
-        />
-
-        <button type="submit" disabled={loading}>
-          {loading ? messages.loading : messages.submit}
-        </button>
+          <button type="submit" disabled={loading}>
+            {loading ? messages.loading : messages.submit}
+          </button>
+        </div>
       </form>
     </div>
   );

@@ -1,18 +1,17 @@
 .container {
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   max-width: var(--max-width);
 }
 
 
 .heading {
-  text-align: center;
-  width: 100%;
-  margin-bottom: 2rem;
-  font-size: 3rem;
+  text-align: start;
+  font-size: 2.5rem;
   font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .grid {
@@ -20,6 +19,7 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   width: 100%;
+  margin-top: 30px;
 }
 
 .card {
@@ -30,8 +30,17 @@
   flex: 1 1 calc(25% - 1.5rem);
   min-width: 250px;
   text-align: center;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  /* Glass effect */
+  background: rgba(255, 255, 255, 0.023);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 .card:hover {
@@ -45,7 +54,6 @@
   aspect-ratio: 1;
   object-fit: contain;
   margin-bottom: 1rem;
-  filter: brightness(0) invert(1);
 }
 
 .name {
@@ -75,7 +83,20 @@
 .cta {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   text-align: end;
   gap: 1rem;
+}
+
+.sponsorsTopLine
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.sponsorsText p
+{
+  margin-bottom: 0;
 }
