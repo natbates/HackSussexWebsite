@@ -38,6 +38,11 @@
   color: var(--text-colour);
   text-decoration: none;
   font-weight: 500;
+  opacity: 0.8;
+}
+
+.navLink:hover {
+  opacity: 1; 
 }
 
 .active {
@@ -120,6 +125,7 @@
   margin-bottom: 30px;
 }
 
+
 .mobileItem {
   display: flex;
   flex-direction: row;
@@ -140,6 +146,11 @@
 @media (max-width: 900px) {
   .rightContainer {
     display: none;
+  }
+
+  .navBar
+  {
+    padding-bottom: 0.1rem;
   }
 
   .mobileControls {

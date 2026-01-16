@@ -37,7 +37,7 @@
 .logoContainer {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -61,6 +61,7 @@
 
     .mobileLogo {
         display: block;
+        width: 90%;
     }
 }
 

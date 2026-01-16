@@ -28,10 +28,10 @@ const Hero = () => {
 
             <p className={styles.description}>{messages.description}</p>
             
-            <div className={styles.socialsNewsletterContainer}>
+            {/* <div className={styles.socialsNewsletterContainer}>
                 <Socials />
                 <NewsletterSignup />
-            </div>
+            </div> */}
         </div>
     );
 };

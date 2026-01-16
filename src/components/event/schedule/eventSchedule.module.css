@@ -59,6 +59,7 @@
   background: transparent;
   transition: transform 0.2s ease;
   color: var(--text-colour);
+  padding-left: 0;
 }
 
 .item:hover {
@@ -90,5 +91,11 @@
 
   .daySection {
     width: 100%;
+  }
+
+  .daySection:not(:last-child) {
+    border-bottom: 1px solid var(--border-colour);
+    padding-bottom: 2rem;
+    margin-bottom: 0.5rem;
   }
 }
