@@ -448,5 +448,16 @@
       "2022"
     ],
     "id": "158f59a8-4c27-4394-948b-679aae4c8220"
+  },
+  {
+    "name": "wefwe",
+    "role": "Social Media",
+    "image": "",
+    "pastCommittee": false,
+    "years": [],
+    "_files": {
+      "image": {}
+    },
+    "id": "7d74aa34-1d13-42d0-9dab-cde9c081286e"
   }
 ]
