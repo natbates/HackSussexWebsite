@@ -434,5 +434,15 @@
     ],
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_x1e478et.png",
     "pastCommittee": true
+  },
+  {
+    "name": "test",
+    "role": "Social Media",
+    "image": "C:\\fakepath\\image-82.png",
+    "pastCommittee": true,
+    "years": [
+      "2022"
+    ],
+    "id": "158f59a8-4c27-4394-948b-679aae4c8220"
   }
 ]
