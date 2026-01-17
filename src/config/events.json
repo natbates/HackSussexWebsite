@@ -75,36 +75,5 @@
       ]
     }
   ],
-  "pastEvents": [
-    {
-      "title": "Test evetn",
-      "date": "2026-01-22",
-      "location": "dqwd",
-      "description": "dqwupkdqwdqwd",
-      "eventType": "Pwn Sussex",
-      "ticketsLink": "https://dqwdqwd.oew",
-      "logo": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/events/40ff36ab-9057-40a8-8bfb-734d0007492f.svg",
-      "schedule": [
-        {
-          "events": [
-            {
-              "time": "fwewefwef",
-              "title": "124124",
-              "description": "ewfwefwefwe"
-            }
-          ]
-        },
-        {
-          "events": [
-            {
-              "time": "wefwef",
-              "title": "ewfwef",
-              "description": "3223r32"
-            }
-          ]
-        }
-      ],
-      "id": "f2acac99-0125-4b5b-87d3-3d1463c83fb1"
-    }
-  ]
+  "pastEvents": []
 }
