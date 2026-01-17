@@ -18,10 +18,11 @@
     "logoUrl": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/sponsors/sponsors_hain1cvb.png"
   },
   {
-    "id": "sponsor_z5baqddtax",
-    "name": "BCS",
+    "name": "BCSs",
     "website": "https://www.bcs.org/",
-    "logoUrl": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/sponsors/sponsors_cd4jyih9.png"
+    "logoUrl": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/sponsors/sponsors_cd4jyih9.png",
+    "id": "sponsor_z5baqddtax",
+    "section": null
   },
   {
     "id": "sponsor_tr3w8xyx5b",
