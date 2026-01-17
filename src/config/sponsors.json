@@ -70,11 +70,5 @@
     "name": "Teach First",
     "website": "https://www.teachfirst.org.uk/",
     "logoUrl": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/sponsors/sponsors_2me79h9g.png"
-  },
-  {
-    "name": "TEST",
-    "website": "",
-    "logoUrl": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/sponsors/f4be57c2-9431-4497-8267-10c9ef775faa.png",
-    "id": "d4780e71-427b-45b2-a16f-86b86d3d70bc"
   }
 ]
