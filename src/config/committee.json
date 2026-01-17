@@ -104,18 +104,19 @@
     "pastCommittee": false
   },
   {
-    "id": "mem_mr3bfiu8umk",
     "name": "Jack Speat",
-    "role": "General Committee",
+    "role": "Web Dev",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_iysm60lk.jpg",
+    "pastCommittee": false,
     "years": [
       "2022/2023",
       "2023/2024",
       "2025/2056"
     ],
-    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_iysm60lk.jpg",
-    "pastCommittee": false,
+    "id": "mem_mr3bfiu8umk",
     "github": "https://github.com/Speaty",
-    "linkedin": "https://www.linkedin.com/in/jack-speat-7333491b3/"
+    "linkedin": "https://www.linkedin.com/in/jack-speat-7333491b3/",
+    "section": null
   },
   {
     "id": "mem_73jqt35d4yb",
