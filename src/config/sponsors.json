@@ -73,9 +73,21 @@
     "logoUrl": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/sponsors/sponsors_2me79h9g.png"
   },
   {
-    "name": "CASM Technology",
-    "website": "https://www.casmtechnology.com/",
-    "logoUrl": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/sponsors/67e5d3db-7419-4cc0-b594-e26b01aa2631.png",
-    "id": "a14863c5-2809-441c-aa5d-13132548eab8"
+    "name": "Hackathons UK",
+    "website": "https://www.hackathons.org.uk/",
+    "logoUrl": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/sponsors/77564a86-863d-4bda-847d-f751794cefb8.png",
+    "id": "c838a7cc-ae0c-4a89-9893-0fceadc1ac03"
+  },
+  {
+    "name": "MLH",
+    "website": "https://mlh.io/",
+    "logoUrl": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/sponsors/2f260102-50a1-49a9-807d-3e103451f723.png",
+    "id": "d2e9f775-4223-448d-baf6-63d0d2841cf6"
+  },
+  {
+    "name": "Recurse ML",
+    "website": "https://www.recurse.ml/",
+    "logoUrl": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/sponsors/7e07dfa6-5cfc-4580-8439-771fa45710d5.png",
+    "id": "c8f9744c-1445-4fe0-ac7d-a90729d417e2"
   }
 ]
