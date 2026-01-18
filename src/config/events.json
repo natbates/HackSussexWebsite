@@ -77,5 +77,101 @@
       "section": "upcomingEvents"
     }
   ],
-  "pastEvents": []
+  "pastEvents": [
+    {
+      "title": "Game Jam 2023",
+      "date": "2023-11-25",
+      "location": "University of Sussex",
+      "description": "replace",
+      "eventType": "Hackathon",
+      "ticketsLink": "",
+      "logo": "",
+      "sponsors": [
+        "413917d2-a40c-4655-ba98-19d52832a875",
+        "sponsor_7zc0feqft4",
+        "d2e9f775-4223-448d-baf6-63d0d2841cf6"
+      ],
+      "schedule": [
+        {
+          "events": [
+            {
+              "time": "10:00",
+              "title": "Registration Opens"
+            },
+            {
+              "time": "11:00",
+              "title": "Opening Ceremony"
+            },
+            {
+              "time": "12:00",
+              "title": "Jam Begins!"
+            },
+            {
+              "time": "13:00",
+              "title": "Lunch"
+            },
+            {
+              "time": "14:00",
+              "title": "Roto Workshop"
+            },
+            {
+              "time": "15:30",
+              "title": "Unity Workshop"
+            },
+            {
+              "time": "16:30",
+              "title": "Cup Stacking"
+            },
+            {
+              "time": "17:30",
+              "title": "MLH Event"
+            },
+            {
+              "time": "18:30",
+              "title": "Dinner",
+              "description": "Doctor Who Movie"
+            },
+            {
+              "time": "22:00",
+              "title": "Minecraft Games"
+            }
+          ]
+        },
+        {
+          "events": [
+            {
+              "time": "00:00",
+              "title": "Midnight Pizza"
+            },
+            {
+              "time": "1:00",
+              "title": "Movie"
+            },
+            {
+              "time": "8:30",
+              "title": "Breakfast"
+            },
+            {
+              "time": "11:00",
+              "title": "Soft Deadline"
+            },
+            {
+              "time": "12:00",
+              "title": "Jam Finishes",
+              "description": "Science Fair"
+            },
+            {
+              "time": "13:00",
+              "title": "Lunch"
+            },
+            {
+              "time": "14:00",
+              "title": "Presentation"
+            }
+          ]
+        }
+      ],
+      "id": "7c40e9b9-1199-47d2-adc2-a0bcc06dd496"
+    }
+  ]
 }
