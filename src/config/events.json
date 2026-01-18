@@ -83,7 +83,7 @@
       "date": "2023-11-25",
       "location": "University of Sussex",
       "description": "replace",
-      "eventType": "Hackathon",
+      "eventType": "Game Jam",
       "ticketsLink": "",
       "logo": "",
       "sponsors": [
@@ -171,7 +171,8 @@
           ]
         }
       ],
-      "id": "7c40e9b9-1199-47d2-adc2-a0bcc06dd496"
+      "id": "7c40e9b9-1199-47d2-adc2-a0bcc06dd496",
+      "section": "pastEvents"
     }
   ]
 }
