@@ -71,5 +71,11 @@
     "name": "Teach First",
     "website": "https://www.teachfirst.org.uk/",
     "logoUrl": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/sponsors/sponsors_2me79h9g.png"
+  },
+  {
+    "name": "Hackathons UK",
+    "website": "https://www.hackathons.org.uk/",
+    "logoUrl": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/sponsors/77564a86-863d-4bda-847d-f751794cefb8.png",
+    "id": "c838a7cc-ae0c-4a89-9893-0fceadc1ac03"
   }
 ]
