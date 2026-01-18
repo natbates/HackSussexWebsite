@@ -435,5 +435,13 @@
     ],
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_x1e478et.png",
     "pastCommittee": true
+  },
+  {
+    "name": "qwdqwd",
+    "role": "Web development",
+    "image": "",
+    "pastCommittee": false,
+    "years": [],
+    "id": "5b510d72-c7cf-4d7d-a2f3-6f369b0d6910"
   }
 ]
