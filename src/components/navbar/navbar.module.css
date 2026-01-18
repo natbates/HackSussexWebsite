@@ -113,6 +113,8 @@
   border: none;
   color: var(--text-colour);
   cursor: pointer;
+  padding-right: 0;
+  padding-top: 0;
 }
 
 .mobileControls {
