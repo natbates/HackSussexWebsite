@@ -89,5 +89,11 @@
     "website": "https://www.recurse.ml/",
     "logoUrl": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/sponsors/7e07dfa6-5cfc-4580-8439-771fa45710d5.png",
     "id": "c8f9744c-1445-4fe0-ac7d-a90729d417e2"
+  },
+  {
+    "name": "Roto VR",
+    "website": "https://www.rotovr.com/",
+    "logoUrl": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/sponsors/592cdf33-316f-4613-bdf9-61ff009be98c.png",
+    "id": "413917d2-a40c-4655-ba98-19d52832a875"
   }
 ]
