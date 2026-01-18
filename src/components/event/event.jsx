@@ -134,21 +134,13 @@ const Event = ({ event, sponsors, timer, simpleDesign = false }) => {
           {/* Sponsors */}
           {eventSponsors?.length > 0 && (
             <div className={styles.sponsors}>
-              <p className={styles.sponsorTitle}>{messages.sponsorsTitle}</p>
               <div className={styles.sponsorLogos}>
                 {eventSponsors.map((sponsor) => (
-                  <a
-                    key={sponsor.id}
-                    href={sponsor.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
                     <img
                       src={sponsor.logoUrl}
                       alt={sponsor.name}
                       className={styles.sponsorLogo}
                     />
-                  </a>
                 ))}
               </div>
             </div>

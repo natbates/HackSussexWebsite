@@ -117,12 +117,10 @@
   flex-grow: 1;
 }
 
-.sponsors {}
-
-.sponsorTitle {
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+.sponsors {
+  margin-top: 15px;
 }
+
 
 .sponsorLogos {
   display: flex;
@@ -136,14 +134,10 @@
   height: 100%;
   width: 150px;
   object-fit: contain;
-  opacity: 0.8;
-  transition: filter 0.3s, opacity 0.3s;
-}
-
-.sponsorLogo:hover {
-  filter: none;
+  object-position: left;
   opacity: 1;
 }
+
 
 .buttons {
   display: flex;

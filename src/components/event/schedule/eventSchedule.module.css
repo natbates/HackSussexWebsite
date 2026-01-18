@@ -46,7 +46,7 @@
 .dayTitle {
   font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 1.4rem;
 }
 
 .item {
@@ -98,4 +98,48 @@
     padding-bottom: 2rem;
     margin-bottom: 0.5rem;
   }
+}
+
+.sponsorsSection {
+  margin-bottom: 2.5rem;
+}
+
+.sponsorsTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.sponsorsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+.sponsorCard {
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  /* Glass effect */
+  background: rgba(255, 255, 255, 0.023);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  padding: 1rem;
+}
+
+.sponsorCard:hover {
+  transform: scale(1.05);
+}
+
+.sponsorImage {
+  max-width: 100%;
+  max-height: 100px;
+  object-fit: contain;
 }

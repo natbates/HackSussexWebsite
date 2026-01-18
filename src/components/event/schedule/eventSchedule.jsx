@@ -1,12 +1,13 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useSiteData } from "../../../hooks/useSiteData";
+import { githubRawToLocal } from "../../../util/githubRawToLocal";
 import styles from "./eventSchedule.module.css";
 import messages from "./eventSchedule.messages";
 
 const EventSchedule = () => {
   const { eventId } = useParams();
-  const { events, loading } = useSiteData();
+  const { events, sponsors, loading } = useSiteData();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -67,6 +68,29 @@ const EventSchedule = () => {
           </div>
         ))}
       </div>
+
+      {sponsors && event.sponsors && event.sponsors.length > 0 && (
+        <div className={styles.sponsorsSection}>
+          <h2 className={styles.sponsorsTitle}>Event Sponsors</h2>
+          <div className={styles.sponsorsGrid}>
+            {sponsors
+              .filter(sponsor => event.sponsors.includes(sponsor.id))
+              .map((sponsor) => (
+                <div
+                  key={sponsor.id}
+                  className={styles.sponsorCard}
+                  onClick={() => window.open(sponsor.website, "_blank", "noopener,noreferrer")}
+                >
+                  <img
+                    src={githubRawToLocal(sponsor.logoUrl)}
+                    alt={sponsor.name}
+                    className={styles.sponsorImage}
+                  />
+                </div>
+              ))}
+          </div>
+        </div>
+      )}
 
       <div className={styles.eventInfo}>
         <p>{messages.intro}</p>
