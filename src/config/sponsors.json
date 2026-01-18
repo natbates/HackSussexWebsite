@@ -77,5 +77,11 @@
     "website": "https://www.hackathons.org.uk/",
     "logoUrl": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/sponsors/77564a86-863d-4bda-847d-f751794cefb8.png",
     "id": "c838a7cc-ae0c-4a89-9893-0fceadc1ac03"
+  },
+  {
+    "name": "MLH",
+    "website": "https://mlh.io/",
+    "logoUrl": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/sponsors/2f260102-50a1-49a9-807d-3e103451f723.png",
+    "id": "d2e9f775-4223-448d-baf6-63d0d2841cf6"
   }
 ]
