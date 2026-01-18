@@ -6,7 +6,7 @@ const DEFAULT_LEAF_SPACING = 250;
 const ROTATION_RANGE = 50;
 const BASE_ROTATION = 90;
 
-// Deterministic pseudo-random
+// Deterministic pseudo-random helpers
 const deterministicBetween = (index, min, max) => {
   const seed = Math.sin(index * 12.9898) * 43758.5453;
   const normalized = seed - Math.floor(seed);
@@ -40,9 +40,18 @@ const LeafBorder = ({ side = "left", spacing = DEFAULT_LEAF_SPACING }) => {
       setLeafCount(count);
     };
 
+    // Observe real document height changes
+    const observer = new ResizeObserver(updateCount);
+    observer.observe(document.body);
+
     updateCount();
+
     window.addEventListener("resize", updateCount);
-    return () => window.removeEventListener("resize", updateCount);
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("resize", updateCount);
+    };
   }, [spacing]);
 
   return (
@@ -50,6 +59,7 @@ const LeafBorder = ({ side = "left", spacing = DEFAULT_LEAF_SPACING }) => {
       className={`${styles.container} ${
         side === "right" ? styles.right : styles.left
       }`}
+      aria-hidden
     >
       {Array.from({ length: leafCount }).map((_, i) => (
         <Leaf

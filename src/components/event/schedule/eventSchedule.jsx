@@ -79,7 +79,7 @@ const EventSchedule = () => {
                 <div
                   key={sponsor.id}
                   className={styles.sponsorCard}
-                  onClick={() => window.open(sponsor.website, "_blank", "noopener,noreferrer")}
+                  // onClick={() => window.open(sponsor.website, "_blank", "noopener,noreferrer")}
                 >
                   <img
                     src={githubRawToLocal(sponsor.logoUrl)}
