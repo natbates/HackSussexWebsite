@@ -5,6 +5,22 @@
   z-index: 100;
 }
 
+.mlhBanner {
+  position: absolute;
+  top: 0;
+  right: 90;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--background-colour);
+}
+
+@media (max-width: 1740px) {
+  .mlhBanner {
+    display: none;
+  }
+}
+
 .navBar {
   max-width: var(--max-width);
   margin: 0 auto;

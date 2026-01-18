@@ -10,6 +10,7 @@ const Navbar = () => {
   const { siteData, events, loading } = useSiteData();
   const [mobileOpen, setMobileOpen] = useState(false);
 
+
   if (loading) return null;
 
   const upcomingEvent = useMemo(() => {
@@ -26,7 +27,17 @@ const Navbar = () => {
 
   return (
     <div className={styles.navbarContainer}>
+
       <div className={styles.navBar}>
+
+        {siteData?.mlhToggle && (
+          <div className={styles.mlhBanner}>
+            <a href="https://mlh.io/seasons/2026/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=white" target="_blank" rel="noopener noreferrer">
+              <img alt="MLH 2026 Hackathon Season" src="https://s3.amazonaws.com/logged-assets/trust-badge/2026/mlh-trust-badge-2026-white.svg" style={{width: '100px'}} />
+            </a>
+          </div>
+        )}
+        
         <div className={styles.leftContainer}>
           <div className={styles.logoContainer} onClick={() => { navigate("/"); setMobileOpen(false); }}>
             <img src={HSLogo} alt="Hack Sussex Logo" className={styles.logo} />

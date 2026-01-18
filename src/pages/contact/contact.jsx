@@ -3,7 +3,7 @@ import styles from "./contact.module.css";
 import messages from "./contact.messages";
 
 const Contact = () => {
-  const { page, reasons, thankYou } = messages; // <-- import thankYou from messages
+  const { page, reasons, thankYou } = messages; 
   const reasonKeys = Object.keys(reasons).filter((key) => key !== "default");
 
   const [reasonKey, setReasonKey] = useState("default");
@@ -12,9 +12,8 @@ const Contact = () => {
     email: "",
     message: "",
   });
-  const [submitted, setSubmitted] = useState(false); // track submission
+  const [submitted, setSubmitted] = useState(false); 
 
-  // Update reasonKey from URL hash
   const updateReasonFromHash = () => {
     const hash = window.location.hash.replace("#", "").toLowerCase();
     if (hash && reasons[hash]) {
