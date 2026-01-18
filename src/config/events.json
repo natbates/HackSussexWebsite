@@ -1,16 +1,16 @@
 {
   "upcomingEvents": [
     {
-      "id": "evt_lp72u50x3w",
       "title": "Game Jam 2025",
       "date": "2027-01-06T10:10:00.000Z",
       "location": "University of Sussex",
       "description": "The Game Jam is back! Collaborating with many of the local studios surrounding Brighton to focus in on our Game Development and Design enthusiasts.",
-      "sponsors": [],
-      "logo": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/events/events_6iybejp1.png",
-      "section": "upcomingEvents",
-      "ticketsLink": "https://tickets.hacksussex.com/GameJam2025/",
       "eventType": "Game Jam",
+      "ticketsLink": "https://tickets.hacksussex.com/GameJam2025/",
+      "logo": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/events/events_6iybejp1.png",
+      "sponsors": [
+        "sponsor_z5baqddtax"
+      ],
       "schedule": [
         {
           "day": "Day 1",
@@ -72,7 +72,9 @@
             }
           ]
         }
-      ]
+      ],
+      "id": "evt_lp72u50x3w",
+      "section": "upcomingEvents"
     }
   ],
   "pastEvents": []
