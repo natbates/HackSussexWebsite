@@ -39,7 +39,7 @@ const messages = {
 
   dashboard: {
     label: "Dashboard",
-    href: "https://hacksussexdashboard.netlify.app/",
+    href: "https://hacksussexdash.netlify.app/",
   },
 
   privacyPolicy: {

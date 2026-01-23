@@ -137,6 +137,7 @@ const Event = ({ event, sponsors, timer, simpleDesign = false }) => {
               <div className={styles.sponsorLogos}>
                 {eventSponsors.map((sponsor) => (
                     <img
+                      key={sponsor.id}
                       src={sponsor.logoUrl}
                       alt={sponsor.name}
                       className={styles.sponsorLogo}
