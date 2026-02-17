@@ -443,5 +443,15 @@
     "pastCommittee": false,
     "years": [],
     "id": "9d85c285-55e8-4b94-a252-1fed9bf597db"
+  },
+  {
+    "name": "Louie Beatty",
+    "role": "General Committee",
+    "image": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/committee/c93055c5-6cb7-432e-9fa6-a2c060881163.png",
+    "pastCommittee": false,
+    "years": [
+      "2026-Present"
+    ],
+    "id": "d08f84f8-3848-4800-9f34-6bd0931d6b76"
   }
 ]
