@@ -1,6 +1,6 @@
 [
   {
-    "name": "Nathaniel Bates",
+    "name": "Nathaniel Bates11",
     "role": "Web development",
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_1n74y1ti.jpeg",
     "pastCommittee": false,
@@ -435,5 +435,13 @@
     ],
     "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_x1e478et.png",
     "pastCommittee": true
+  },
+  {
+    "name": "awd",
+    "role": "Social Media",
+    "image": "",
+    "pastCommittee": false,
+    "years": [],
+    "id": "9d85c285-55e8-4b94-a252-1fed9bf597db"
   }
 ]
