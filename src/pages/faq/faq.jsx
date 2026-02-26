@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import { Collapse } from "react-collapse";
 import styles from "./faq.module.css";
 import messages from "./faq.messages";
 
 const FAQ = () => {
-  const [openIds, setOpenIds] = useState([]); // <-- array now
+  const [openIds, setOpenIds] = useState([]); // store open item ids
+
 
   const toggleFAQ = (id) => {
     setOpenIds((prev) =>
@@ -12,6 +14,15 @@ const FAQ = () => {
         : [...prev, id] // open
     );
   };
+
+  // wrapper around react-collapse for consistent styling
+  const Answer = ({ isOpen, children }) => (
+    <Collapse isOpened={isOpen} theme={{collapse: styles.collapse}}>
+      <div className={styles.answer}>
+        <p>{children}</p>
+      </div>
+    </Collapse>
+  );
 
   return (
     <section className={styles.container}>
@@ -38,13 +49,7 @@ const FAQ = () => {
                 </span>
               </button>
 
-              <div
-                className={`${styles.answer} ${
-                  isOpen ? styles.open : ""
-                }`}
-              >
-                <p>{faq.answer}</p>
-              </div>
+              <Answer isOpen={isOpen}>{faq.answer}</Answer>
             </div>
           );
         })}

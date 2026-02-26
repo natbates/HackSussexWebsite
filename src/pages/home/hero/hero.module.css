@@ -16,15 +16,6 @@
     gap: 50px;
 }
 
-.mlhBanner
-{
-    position: absolute;
-    top: -30;
-    right: 70;
-    width: 120px;
-    opacity: 1;
-    z-index: 0;
-}
 
 .welcomeTo
 {
@@ -49,8 +40,7 @@
 
 .mobileLogo {
     display: none;
-    width: 100%;
-    height: auto;
+    padding-top: 50px;
 }
 
 /* Media query for screens ≤ 650px */
@@ -61,7 +51,7 @@
 
     .mobileLogo {
         display: block;
-        width: 90%;
+        width: 100%;
     }
 }
 

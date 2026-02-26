@@ -8,9 +8,12 @@
       "eventType": "Game Jam",
       "ticketsLink": "https://tickets.hacksussex.com/GameJam2025/",
       "logo": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/events/events_6iybejp1.png",
-      "sponsors": [
-        "sponsor_z5baqddtax"
-      ],
+      "sponsors": {
+        "gold": [],
+        "silver": ["sponsor_z5baqddtax"],
+        "bronze": [],
+        "partner": []
+      },
       "schedule": [
         {
           "day": "Day 1",
@@ -86,11 +89,16 @@
       "eventType": "Game Jam",
       "ticketsLink": "",
       "logo": "",
-      "sponsors": [
-        "413917d2-a40c-4655-ba98-19d52832a875",
-        "sponsor_7zc0feqft4",
-        "d2e9f775-4223-448d-baf6-63d0d2841cf6"
-      ],
+      "sponsors": {
+        "gold": [],
+        "silver": [
+          "413917d2-a40c-4655-ba98-19d52832a875",
+          "sponsor_7zc0feqft4",
+          "d2e9f775-4223-448d-baf6-63d0d2841cf6"
+        ],
+        "bronze": [],
+        "partner": []
+      },
       "schedule": [
         {
           "events": [

@@ -4,6 +4,7 @@ import { useSiteData } from "../../../hooks/useSiteData";
 import { githubRawToLocal } from "../../../util/githubRawToLocal";
 import styles from "./eventSchedule.module.css";
 import messages from "./eventSchedule.messages";
+import { getSponsorsByTier, flattenSponsors } from "../../../util/sponsorHelpers";
 
 const EventSchedule = () => {
   const { eventId } = useParams();
@@ -23,8 +24,18 @@ const EventSchedule = () => {
   const event = allEvents.find((e) => e.id === eventId);
 
   if (!event) return <p>{messages.eventNotFound}</p>;
-  if (!event.schedule || event.schedule.length === 0)
-    return <p>{messages.noSchedule}</p>;
+
+  // determine if there is anything worth showing. we consider a schedule
+  // "present" only when it's an array and at least one day contains items.
+  const hasSchedule =
+    Array.isArray(event.schedule) &&
+    event.schedule.some(
+      (day) => Array.isArray(day.items) && day.items.length > 0
+    );
+
+  // normalise sponsor data for display
+  const sponsorsByTier = getSponsorsByTier(event, sponsors);
+  const anySponsors = flattenSponsors(sponsorsByTier);
 
   const eventDate = new Date(event.date);
   const now = new Date();
@@ -49,45 +60,50 @@ const EventSchedule = () => {
         · {event.location}
       </p>
 
-      <div className={styles.daysGrid}>
-        {event.schedule.map((daySchedule, dayIndex) => (
-          <div key={dayIndex} className={styles.daySection}>
-            <h2 className={styles.dayTitle}>{daySchedule.day}</h2>
+      <p>{event.description}</p>
 
-            <div className={styles.timeline}>
-              {daySchedule.items.map((item, index) => (
-                <div key={index} className={styles.item}>
-                  <div className={styles.time}>{item.time}</div>
-                  <div className={styles.content}>
-                    <h3>{item.title}</h3>
-                    {item.description && <p>{item.description}</p>}
+      {hasSchedule ? (
+        <div className={styles.daysGrid}>
+          {event.schedule.map((daySchedule, dayIndex) => (
+            <div key={dayIndex} className={styles.daySection}>
+              <h2 className={styles.dayTitle}>{daySchedule.day}</h2>
+
+              <div className={styles.timeline}>
+                {(daySchedule.items || []).map((item, index) => (
+                  <div key={index} className={styles.item}>
+                    <div className={styles.time}>{item.time}</div>
+                    <div className={styles.content}>
+                      <h3>{item.title}</h3>
+                      {item.description && <p>{item.description}</p>}
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      ) : (
+        null
+      )}
 
-      {sponsors && event.sponsors && event.sponsors.length > 0 && (
+      {anySponsors.length > 0 && (
         <div className={styles.sponsorsSection}>
-          <h2 className={styles.sponsorsTitle}>Event Sponsors</h2>
-          <div className={styles.sponsorsGrid}>
-            {sponsors
-              .filter(sponsor => event.sponsors.includes(sponsor.id))
-              .map((sponsor) => (
-                <div
-                  key={sponsor.id}
-                  className={styles.sponsorCard}
-                  // onClick={() => window.open(sponsor.website, "_blank", "noopener,noreferrer")}
-                >
+          <h2 className={styles.sponsorsTitle}>{messages.sponsorSectionTitle || "Event Sponsors"}</h2>
+          <div className={styles.sponsorRow}>
+            {['gold','silver','bronze','partner','other'].map((tier) =>
+              (sponsorsByTier[tier] || []).map((sponsor) => (
+                <div key={sponsor.id} className={styles.sponsorCard}>
+                  <span className={styles.sponsorTierLabel}>
+                    {messages.tierLabels?.[tier] || tier.charAt(0).toUpperCase() + tier.slice(1)}
+                  </span>
                   <img
                     src={githubRawToLocal(sponsor.logoUrl)}
                     alt={sponsor.name}
                     className={styles.sponsorImage}
                   />
                 </div>
-              ))}
+              ))
+            )}
           </div>
         </div>
       )}

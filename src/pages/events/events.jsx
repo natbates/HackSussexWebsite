@@ -77,6 +77,7 @@ const Events = () => {
               event={event}
               sponsors={sponsors}
               timer={{ closed: true }} // past events always have tickets closed
+              isPast={true}
             />
           ))}
         </>

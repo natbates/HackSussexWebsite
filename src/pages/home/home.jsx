@@ -12,11 +12,9 @@ const Home = () => {
     <div className={styles.homePage}>
       <Hero />
       <UpcomingEvents />
-            <Sponsors />
-
+      <Sponsors />
       <Video />
-                  <EventTypes />
-
+      <EventTypes />
       {/* <JoinCommittee /> */}
     </div>
   );

@@ -3,8 +3,9 @@ import { useNavigate } from "react-router-dom";
 import styles from "./event.module.css";
 import messages from "./event.messages";
 import { githubRawToLocal } from "../../util/githubRawToLocal";
+import { getSponsorsByTier, flattenSponsors } from "../../util/sponsorHelpers";
 
-const Event = ({ event, sponsors, timer, simpleDesign = false }) => {
+const Event = ({ event, sponsors, timer, simpleDesign = false, isPast = false }) => {
   const navigate = useNavigate();
 
   const ticketsClosed = timer?.closed;
@@ -48,6 +49,10 @@ const Event = ({ event, sponsors, timer, simpleDesign = false }) => {
     URL.revokeObjectURL(url);
   };
 
+  // normalise the event's sponsor data using the shared helper
+  const sponsorsByTier = getSponsorsByTier(event, sponsors);
+  const eventSponsors = flattenSponsors(sponsorsByTier);
+
   // -------------------
   // Simple Card JSX
   // -------------------
@@ -82,9 +87,15 @@ const Event = ({ event, sponsors, timer, simpleDesign = false }) => {
               {messages.calendarBtnText}
             </button>
           )}
-          <button className="secondary"
-              onClick={() => navigate(`/schedules/${event.id}`)}>
-            {messages.scheduleBtnText}
+          <button
+            className="secondary"
+            onClick={() => navigate(`/schedules/${event.id}`)}
+          >
+            {isPast
+              ? messages.detailsBtnText || "See details"
+              : event.schedule && event.schedule.length > 0
+              ? messages.scheduleBtnText
+              : messages.detailsBtnText || "See details"}
           </button>
           {ticketsClosed ? (
             <button disabled>{messages.ticketsClosedText}</button>
@@ -105,8 +116,6 @@ const Event = ({ event, sponsors, timer, simpleDesign = false }) => {
   // -------------------
   // Full Card JSX
   // -------------------
-  const eventSponsors = sponsors?.filter((s) => event.sponsors.includes(s.id));
-
   return (
     <div className={styles.eventWrapper}>
       <div className={styles.eventCard}>
@@ -131,21 +140,23 @@ const Event = ({ event, sponsors, timer, simpleDesign = false }) => {
             <p className={styles.countdown}>{timer.text}</p>
           )}
 
-          {/* Sponsors */}
-          {eventSponsors?.length > 0 && (
+          {/* {eventSponsors?.length > 0 && (
             <div className={styles.sponsors}>
-              <div className={styles.sponsorLogos}>
-                {eventSponsors.map((sponsor) => (
-                    <img
-                      key={sponsor.id}
-                      src={sponsor.logoUrl}
-                      alt={sponsor.name}
-                      className={styles.sponsorLogo}
-                    />
-                ))}
+              <div className={styles.sponsorRow}>
+                {['gold','silver','bronze','partner','other'].map((tier) =>
+                  (sponsorsByTier[tier] || []).map((sponsor) => (
+                    <div key={sponsor.id} className={styles.sponsorCard}>
+                      <img
+                        src={sponsor.logoUrl}
+                        alt={sponsor.name}
+                        className={styles.sponsorLogo}
+                      />
+                    </div>
+                  ))
+                )}
               </div>
             </div>
-          )}
+          )} */}
 
           {/* Date */}
           <p className={styles.date}>

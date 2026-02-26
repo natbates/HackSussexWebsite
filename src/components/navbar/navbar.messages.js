@@ -6,17 +6,18 @@ const messages = {
 
     { name: "Gallery", path: "/gallery" },
     { name: "Sponsors", path: "/sponsors" },
-    {
-      name: "Events",
-      path: "/events",
-      dropdown: [
-        { name: "All Events", path: "/events" },
-        { name: "Hackathon", path: "/events/hackathons" },
-        { name: "Game Jams", path: "/events/gamejams" },
-        { name: "Coders Cup", path: "/events/coderscup" },
-        { name: "PwnSussex", path: "/events/pwnsussex" }
-      ]
-    },
+    { name: "All Events", path: "/events" },
+    // {
+    //   name: "Events",
+    //   path: "/events",
+    //   dropdown: [
+    //     { name: "All Events", path: "/events" },
+    //     { name: "Hackathon", path: "/events/hackathons" },
+    //     { name: "Game Jams", path: "/events/gamejams" },
+    //     { name: "Coders Cup", path: "/events/coderscup" },
+    //     { name: "PwnSussex", path: "/events/pwnsussex" }
+    //   ]
+    // },
     { name: "Committee", path: "/committee" },
     { name: "FAQ", path: "/faq" },
     { name: "Merch Store", path: "/" },

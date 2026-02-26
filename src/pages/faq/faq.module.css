@@ -20,17 +20,17 @@
   margin-top: 30px;
 }
 
-.faqItem {
-}
 
 .question {
   width: 100%;
   background: transparent;
   padding: 1.25rem 1.5rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   cursor: pointer;
+  text-align: start;
   font-size: 1.0rem;
   font-weight: 600;
   outline: 2px solid var(--border-colour);
@@ -40,6 +40,7 @@
 .question span
 {
   color: white;
+  white-space: wrap;
 }
 
 .arrow {
@@ -51,10 +52,6 @@
 }
 
 .answer {
-  max-height: 0;
-  overflow: hidden;
-  padding: 0 1.5rem;
-  opacity: 0;
   border-radius: var(--border-radius);
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -62,14 +59,12 @@
   border-top: none;
   margin: 0px 20px;
   margin-top: 1px;
-  transition:
-    max-height 0.4s ease,
-    opacity 0.4s ease-in-out,
-    padding 0.4s ease-in-out;
+  padding: 1rem 1.5rem 1.25rem;
+  opacity: 0.85;
 }
 
-.answer.open {
-  max-height: 500px;
-  opacity: 0.85;
-  padding: 1rem 1.5rem 1.25rem;
+/* optional collapse wrapper style if needed */
+.collapse {
+  overflow: hidden;
+  transition: height 0.35s ease-in-out, opacity 0.3s ease, padding 0.3s ease;
 }

@@ -16,6 +16,14 @@ const messages = {
 
     outro:
         "Please make sure to check the schedule and event details for any updates before attending.",
+
+    sponsorSectionTitle: "Event Sponsors",
+    tierLabels: {
+        gold: "Gold",
+        silver: "Silver",
+        bronze: "Bronze",
+        partner: "Partner"
+    }
 };
 
 export default messages;
