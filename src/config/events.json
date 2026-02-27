@@ -1,4 +1,28 @@
 {
-  "upcomingEvents": [],
+  "upcomingEvents": [
+    {
+      "title": "wadawdawdawdawd",
+      "date": "2026-02-14",
+      "location": "awd",
+      "description": "awd",
+      "eventType": "Hackathon",
+      "ticketsLink": "",
+      "logo": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/events/dc298300-7d8d-41b7-b0fe-c734df6c662a.png",
+      "sponsors": {
+        "gold": [
+          "sponsor_uiob953023r"
+        ],
+        "silver": [
+          "sponsor_t4vn9iyr63f",
+          "c838a7cc-ae0c-4a89-9893-0fceadc1ac03"
+        ],
+        "bronze": [],
+        "partner": [
+          "sponsor_uiob953023r"
+        ]
+      },
+      "id": "91463622-f898-47ef-8bdc-8715d083ca96"
+    }
+  ],
   "pastEvents": []
 }
