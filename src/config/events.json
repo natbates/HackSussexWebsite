@@ -146,6 +146,20 @@
       "schedule": [],
       "id": "2e458582-4e3e-4386-8d46-8e5fe2101c8d",
       "section": "pastEvents"
+    },
+    {
+      "title": "Game Jam 2024",
+      "date": "2024-11-30",
+      "location": "University of Sussex",
+      "description": "This is an opportunity for students of all abilities to collaborate, learn new skills, and build something cool using technology. It's a great way for people with similar interests to work together on exciting projects in a fast-paced, creative environment. HackSussex Game Jam is a fun and inclusive weekend-long event that invites participants to team up and build their own video games in just a short span of time. It's an incredible chance to meet like-minded individuals, develop your skills, and have a blast doing it.\n\n- 24 Hours of project building \n- Win exciting prizes \n- Free swag \n- Free Food and Drinks \n- Workshops to learn skills \n\nCode of Conduct \nHackSussex Game Jam 2024 is run in accordance with the Hackathons UK Code of Conduct.",
+      "eventType": "Game Jam",
+      "ticketsLink": "",
+      "logo": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/events/76312cee-6ae0-4efe-a0c6-811b2eeecfb2.png",
+      "sponsors": {
+        "sponsor_uiob953023r": "partner"
+      },
+      "schedule": [],
+      "id": "82ad3727-dceb-4125-8de3-cb6df6dc12f8"
     }
   ]
 }
