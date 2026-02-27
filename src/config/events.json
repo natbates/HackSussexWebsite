@@ -108,6 +108,25 @@
       },
       "schedule": [],
       "id": "c3a429cb-06f2-444f-8afa-8348f4aaf7fa"
+    },
+    {
+      "title": "HackSussex 2024",
+      "date": "2024-02-17",
+      "location": "University of Sussex",
+      "description": "Our annual hackathon. Join us for a free weekend of coding, eating and winning prizes! Every year, HackSussex hosts its main event, the hackathon! We provide a free event for students and graduates to stretch their skills and win prizes across a wide range of technical areas, such as robotics, fintech, artificial intelligence, games development and more. Meals are provided throughout the event to ensure our hackers are well fed and powered up to produce the best projects over the course of a weekend. Once submission close, each team will present their project to our panel of judges to decide who will win each track, along with the grand prize winner of the entire hackathon.\n\nThis is an opportunity for students of all abilities to collaborate, learn new skills, and build something cool using technology. It's a great way for people with similar interests to work together on exciting projects in a fast-paced, creative environment.\n\n- 24 Hours of project building \n- Win exciting prizes \n- Free swag \n- Free Food and Drinks \n- Workshops to learn skills \n\nCode of Conduct \nHackSussex 2024 is run in accordance with the MLH Code of Conduct and the Hackathons UK Code of Conduct.\n\n",
+      "eventType": "Hackathon",
+      "ticketsLink": "",
+      "logo": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/events/13b3527b-c211-4578-892f-55a428ef70a5.png",
+      "sponsors": {
+        "sponsor_z5baqddtax": "silver",
+        "sponsor_4u46xc97ku": "silver",
+        "413917d2-a40c-4655-ba98-19d52832a875": "gold",
+        "sponsor_umlbpo97xof": "gold",
+        "c838a7cc-ae0c-4a89-9893-0fceadc1ac03": "partner",
+        "sponsor_uiob953023r": "partner"
+      },
+      "schedule": [],
+      "id": "93345427-cab5-4ab6-a9c1-62bd044598ac"
     }
   ]
 }
