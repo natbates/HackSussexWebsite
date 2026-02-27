@@ -58,7 +58,7 @@
       "title": "HackSussex 2023",
       "date": "2023-02-18",
       "location": "University of Sussex",
-      "description": "This is an opportunity for students of all abilities to collaborate, learn new skills, and build something cool using technology. It's a great way for people with similar interests to work together on exciting projects in a fast-paced, creative environment.\n\n24 Hours of project buildingÃÂÃÂ¢ÃÂÃÂÃÂÃÂ\nWin exciting prizesÃÂÃÂ¢ÃÂÃÂÃÂÃÂ\nFree swagÃÂÃÂ¢ÃÂÃÂÃÂÃÂ\nFree Food and DrinksÃÂÃÂ¢ÃÂÃÂÃÂÃÂ\nWorkshops to learn skillsÃÂÃÂ¢ÃÂÃÂÃÂÃÂ\n\nThis year HackSussex 2023 is going Hybrid!\nIn addition to the in-person experience, you will be able to take part online! Thanks to our partners at the Media Technology Lab, we will be running a professional live stream throughout the event to allow our digital attendees to ask questions, speak to sponsors, attend workshops and take part in the hack!\n\n\nCode of Conduct \nHackSussex 2023 is run in accordance with the MLH Code of Conduct and the Hackathons UK Code of Conduct.",
+      "description": "This is an opportunity for students of all abilities to collaborate, learn new skills, and build something cool using technology. It's a great way for people with similar interests to work together on exciting projects in a fast-paced, creative environment.\n\n24 Hours of project buildingÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ\nWin exciting prizesÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ\nFree swagÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ\nFree Food and DrinksÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ\nWorkshops to learn skillsÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ\n\nThis year HackSussex 2023 is going Hybrid!\nIn addition to the in-person experience, you will be able to take part online! Thanks to our partners at the Media Technology Lab, we will be running a professional live stream throughout the event to allow our digital attendees to ask questions, speak to sponsors, attend workshops and take part in the hack!\n\n\nCode of Conduct \nHackSussex 2023 is run in accordance with the MLH Code of Conduct and the Hackathons UK Code of Conduct.",
       "eventType": "Hackathon",
       "ticketsLink": "",
       "logo": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/events/ace79167-a6d2-49df-9ffb-9394298c5fb5.png",
@@ -90,9 +90,10 @@
     },
     {
       "title": "Game Jam 2023",
+      "past": true,
       "date": "2023-11-25",
       "location": "University of Sussex",
-      "description": "This is an opportunity for students of all abilities to collaborate, learn new skills, and build something cool using technology. It's a great way for people with similar interests to work together on exciting projects in a fast-paced, creative environment. HackSussex Game Jam is a fun and inclusive weekend-long event that invites participants to team up and build their own video games in just a short span of time. It's an incredible chance to meet like-minded individuals, develop your skills, and have a blast doing it.\n\n- 24 Hours of project buildingÃÂ¢ÃÂÃÂ\n- Win exciting prizesÃÂ¢ÃÂÃÂ\n- Free swagÃÂ¢ÃÂÃÂ\n- Free Food and DrinksÃÂ¢ÃÂÃÂ\n- Workshops to learn skillsÃÂ¢ÃÂÃÂ\n\nCode of Conduct \nHackSussex Game Jam 2023 is run in accordance with the MLH Code of Conduct and the Hackathons UK Code of Conduct.\n",
+      "description": "This is an opportunity for students of all abilities to collaborate, learn new skills, and build something cool using technology. It's a great way for people with similar interests to work together on exciting projects in a fast-paced, creative environment. HackSussex Game Jam is a fun and inclusive weekend-long event that invites participants to team up and build their own video games in just a short span of time. It's an incredible chance to meet like-minded individuals, develop your skills, and have a blast doing it.\n\n- 24 Hours of project building\n- Win exciting prizes\n- Free swag\n- Free Food and Drinks\n- Workshops to learn skills\n\nCode of Conduct \nHackSussex Game Jam 2023 is run in accordance with the MLH Code of Conduct and the Hackathons UK Code of Conduct.\n",
       "eventType": "Game Jam",
       "ticketsLink": "",
       "logo": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/events/0d3084c6-5f7e-4117-ad00-9bfaf270970b.png",
@@ -102,14 +103,25 @@
         "d2e9f775-4223-448d-baf6-63d0d2841cf6": "partner",
         "sponsor_uiob953023r": "partner"
       },
-      "schedule": [],
-      "id": "c3a429cb-06f2-444f-8afa-8348f4aaf7fa"
+      "schedule": [
+        {
+          "events": [
+            {
+              "time": "",
+              "title": "",
+              "description": ""
+            }
+          ]
+        }
+      ],
+      "id": "c3a429cb-06f2-444f-8afa-8348f4aaf7fa",
+      "section": "pastEvents"
     },
     {
       "title": "HackSussex 2024",
       "date": "2024-02-17",
       "location": "University of Sussex",
-      "description": "Our annual hackathon. Join us for a free weekend of coding, eating and winning prizes! Every year, HackSussex hosts its main event, the hackathon! We provide a free event for students and graduates to stretch their skills and win prizes across a wide range of technical areas, such as robotics, fintech, artificial intelligence, games development and more. Meals are provided throughout the event to ensure our hackers are well fed and powered up to produce the best projects over the course of a weekend. Once submission close, each team will present their project to our panel of judges to decide who will win each track, along with the grand prize winner of the entire hackathon.\n\nThis is an opportunity for students of all abilities to collaborate, learn new skills, and build something cool using technology. It's a great way for people with similar interests to work together on exciting projects in a fast-paced, creative environment.\n\n- 24 Hours of project buildingÃÂ¢ÃÂÃÂ\n- Win exciting prizesÃÂ¢ÃÂÃÂ\n- Free swagÃÂ¢ÃÂÃÂ\n- Free Food and DrinksÃÂ¢ÃÂÃÂ\n- Workshops to learn skillsÃÂ¢ÃÂÃÂ\n\nCode of Conduct \nHackSussex 2024 is run in accordance with the MLH Code of Conduct and the Hackathons UK Code of Conduct.\n\n",
+      "description": "Our annual hackathon. Join us for a free weekend of coding, eating and winning prizes! Every year, HackSussex hosts its main event, the hackathon! We provide a free event for students and graduates to stretch their skills and win prizes across a wide range of technical areas, such as robotics, fintech, artificial intelligence, games development and more. Meals are provided throughout the event to ensure our hackers are well fed and powered up to produce the best projects over the course of a weekend. Once submission close, each team will present their project to our panel of judges to decide who will win each track, along with the grand prize winner of the entire hackathon.\n\nThis is an opportunity for students of all abilities to collaborate, learn new skills, and build something cool using technology. It's a great way for people with similar interests to work together on exciting projects in a fast-paced, creative environment.\n\n- 24 Hours of project buildingÃÂÃÂ¢ÃÂÃÂÃÂÃÂ\n- Win exciting prizesÃÂÃÂ¢ÃÂÃÂÃÂÃÂ\n- Free swagÃÂÃÂ¢ÃÂÃÂÃÂÃÂ\n- Free Food and DrinksÃÂÃÂ¢ÃÂÃÂÃÂÃÂ\n- Workshops to learn skillsÃÂÃÂ¢ÃÂÃÂÃÂÃÂ\n\nCode of Conduct \nHackSussex 2024 is run in accordance with the MLH Code of Conduct and the Hackathons UK Code of Conduct.\n\n",
       "eventType": "Hackathon",
       "ticketsLink": "",
       "logo": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/events/13b3527b-c211-4578-892f-55a428ef70a5.png",
@@ -128,7 +140,7 @@
       "title": "Coders Cup 2024",
       "date": "2024-05-10",
       "location": "University of Sussex",
-      "description": "The Coders Cup is HackSussex's algorithmic coding competition for students! The live finals are where we place the top 8 of our qualifiers against each other to win the grand prizes! The competition is for undergraduate students to test their programming skills in a fun and exciting way whilst under the pressure of a live show.\n\nThis year is the 4th year of the Coders Cup!\nWho will be this years Coders Cup champion and be taking home prizes worth ÃÂÃÂ£1000+",
+      "description": "The Coders Cup is HackSussex's algorithmic coding competition for students! The live finals are where we place the top 8 of our qualifiers against each other to win the grand prizes! The competition is for undergraduate students to test their programming skills in a fun and exciting way whilst under the pressure of a live show.\n\nThis year is the 4th year of the Coders Cup!\nWho will be this years Coders Cup champion and be taking home prizes worth ÃÂÃÂÃÂÃÂ£1000+",
       "eventType": "Coders Cup",
       "ticketsLink": "",
       "logo": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/events/8ea7e735-215e-44e6-b4ff-b6ca71a95706.png",
@@ -147,7 +159,7 @@
       "title": "Game Jam 2024",
       "date": "2024-11-30",
       "location": "University of Sussex",
-      "description": "This is an opportunity for students of all abilities to collaborate, learn new skills, and build something cool using technology. It's a great way for people with similar interests to work together on exciting projects in a fast-paced, creative environment. HackSussex Game Jam is a fun and inclusive weekend-long event that invites participants to team up and build their own video games in just a short span of time. It's an incredible chance to meet like-minded individuals, develop your skills, and have a blast doing it.\n\n- 24 Hours of project buildingÃ¢ÂÂ\n- Win exciting prizesÃ¢ÂÂ\n- Free swagÃ¢ÂÂ\n- Free Food and DrinksÃ¢ÂÂ\n- Workshops to learn skillsÃ¢ÂÂ\n\nCode of Conduct \nHackSussex Game Jam 2024 is run in accordance with the Hackathons UK Code of Conduct.",
+      "description": "This is an opportunity for students of all abilities to collaborate, learn new skills, and build something cool using technology. It's a great way for people with similar interests to work together on exciting projects in a fast-paced, creative environment. HackSussex Game Jam is a fun and inclusive weekend-long event that invites participants to team up and build their own video games in just a short span of time. It's an incredible chance to meet like-minded individuals, develop your skills, and have a blast doing it.\n\n- 24 Hours of project buildingÃÂ¢ÃÂÃÂ\n- Win exciting prizesÃÂ¢ÃÂÃÂ\n- Free swagÃÂ¢ÃÂÃÂ\n- Free Food and DrinksÃÂ¢ÃÂÃÂ\n- Workshops to learn skillsÃÂ¢ÃÂÃÂ\n\nCode of Conduct \nHackSussex Game Jam 2024 is run in accordance with the Hackathons UK Code of Conduct.",
       "eventType": "Game Jam",
       "ticketsLink": "",
       "logo": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/events/76312cee-6ae0-4efe-a0c6-811b2eeecfb2.png",
@@ -161,7 +173,7 @@
       "title": "HackSussex 2025",
       "date": "2025-02-18",
       "location": "University of Sussex",
-      "description": "This is an opportunity for students of all abilities to collaborate, learn new skills, and build something cool using technology. It's a great way for people with similar interests to work together on exciting projects in a fast-paced, creative environment.\n\n- 24 Hours of project buildingâ\n- Win exciting prizesâ\n- Free swagâ\n- Free Food and Drinksâ\n- Workshops to learn skillsâ\n\nCode of Conduct \nHackSussex 2025 is run in accordance with the MLH Code of Conduct and the Hackathons UK Code of Conduct.",
+      "description": "This is an opportunity for students of all abilities to collaborate, learn new skills, and build something cool using technology. It's a great way for people with similar interests to work together on exciting projects in a fast-paced, creative environment.\n\n- 24 Hours of project buildingÃ¢ÂÂ\n- Win exciting prizesÃ¢ÂÂ\n- Free swagÃ¢ÂÂ\n- Free Food and DrinksÃ¢ÂÂ\n- Workshops to learn skillsÃ¢ÂÂ\n\nCode of Conduct \nHackSussex 2025 is run in accordance with the MLH Code of Conduct and the Hackathons UK Code of Conduct.",
       "eventType": "Hackathon",
       "ticketsLink": "",
       "logo": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/events/dfd64473-9218-4b0d-916c-c7753320f441.jpg",
@@ -179,7 +191,7 @@
       "title": "Game Jam 2025",
       "date": "2025-12-06",
       "location": "University of Sussex",
-      "description": "Are you ready to conjure up something magical this winter? \n\nJoin us for HackSussexâs annual Game Jam, taking place from Saturday 6th to Sunday 7th December 2025 - a full weekend of creativity, coding, design, and fun!\n\nWhether you're a seasoned game developer, an artist, a storyteller, or just curious to try something new, everyone is welcome. Youâll have 24 hours to dream up, design, and build your very own game - all while learning new skills, collaborating with others, and maybe even sprinkling in a little bit of magic along the way.\n\nHereâs what to expect:\n- Plenty of snacks and drinks to keep your energy high\n- A chance to meet amazing people and form new teams\n- Fun themes and prizes for the best creations\n- And of course, an unforgettable weekend of creativity and chaos!\n\nWhether youâre building your first ever game or returning to defend your pixelated crown, this yearâs Game Jam promises to be an event full of imagination, teamwork, and (just maybe) a touch of magic.\n\nCode of Conduct \nHackSussex Game Jam 2025 is run in accordance with the MLH Code of Conduct.\n",
+      "description": "Are you ready to conjure up something magical this winter? \n\nJoin us for HackSussexÃ¢ÂÂs annual Game Jam, taking place from Saturday 6th to Sunday 7th December 2025 - a full weekend of creativity, coding, design, and fun!\n\nWhether you're a seasoned game developer, an artist, a storyteller, or just curious to try something new, everyone is welcome. YouÃ¢ÂÂll have 24 hours to dream up, design, and build your very own game - all while learning new skills, collaborating with others, and maybe even sprinkling in a little bit of magic along the way.\n\nHereÃ¢ÂÂs what to expect:\n- Plenty of snacks and drinks to keep your energy high\n- A chance to meet amazing people and form new teams\n- Fun themes and prizes for the best creations\n- And of course, an unforgettable weekend of creativity and chaos!\n\nWhether youÃ¢ÂÂre building your first ever game or returning to defend your pixelated crown, this yearÃ¢ÂÂs Game Jam promises to be an event full of imagination, teamwork, and (just maybe) a touch of magic.\n\nCode of Conduct \nHackSussex Game Jam 2025 is run in accordance with the MLH Code of Conduct.\n",
       "eventType": "Game Jam",
       "ticketsLink": "",
       "logo": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/events/7b9c8bc1-b0ae-4a7a-9fec-7afc7b6512f4.png",
