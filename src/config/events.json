@@ -172,6 +172,24 @@
       "sponsors": {},
       "schedule": [],
       "id": "6670aeeb-ebf4-4cad-a93c-c997f878ba3b"
+    },
+    {
+      "title": "HackSussex 2025",
+      "date": "2025-02-18",
+      "location": "University of Sussex",
+      "description": "This is an opportunity for students of all abilities to collaborate, learn new skills, and build something cool using technology. It's a great way for people with similar interests to work together on exciting projects in a fast-paced, creative environment.\n\n- 24 Hours of project building \n- Win exciting prizes \n- Free swag \n- Free Food and Drinks \n- Workshops to learn skills \n\nCode of Conduct \nHackSussex 2025 is run in accordance with the MLH Code of Conduct and the Hackathons UK Code of Conduct.",
+      "eventType": "Hackathon",
+      "ticketsLink": "",
+      "logo": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/events/dfd64473-9218-4b0d-916c-c7753320f441.jpg",
+      "sponsors": {
+        "sponsor_uiob953023r": "partner",
+        "sponsor_z5baqddtax": "silver",
+        "c8f9744c-1445-4fe0-ac7d-a90729d417e2": "bronze",
+        "893a0bed-2064-47ad-b9c3-76319b28303e": "silver",
+        "sponsor_umlbpo97xof": "silver"
+      },
+      "schedule": [],
+      "id": "2977ff45-f35b-447a-8707-a983d83d16f0"
     }
   ]
 }
