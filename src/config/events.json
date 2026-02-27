@@ -1,5 +1,58 @@
 {
-  "upcomingEvents": [],
+  "upcomingEvents": [
+    {
+      "title": "HackSussex 2026",
+      "past": false,
+      "date": "2026-02-28",
+      "location": "University of Sussex",
+      "description": "This is an opportunity for students of all abilities to collaborate, learn new skills, and build something cool using technology. It's a great way for people with similar interests to work together on exciting projects in a fast-paced, creative environment. HackSussex 2026 is a fun and inclusive weekend-long event that invites participants to team up and build their own technology in just a short span of time. It's an incredible chance to meet like-minded individuals, develop your skills, and have a blast doing it.\n24 Hours of project building\nWin exciting prizes\nFree swag\nFree Food and Drinks\nWorkshops to learn skills\nCode of Conduct\nHackSussex 2026 is run in accordance with the MLH Code of Conduct.",
+      "eventType": "Hackathon",
+      "ticketsLink": "https://ticketlink.com",
+      "logo": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/events/dd9a2f35-c3eb-4893-a844-d5022d1b6566.png",
+      "sponsors": {
+        "049eef45-84f1-4dbe-90c2-7bbf5676b78d": "silver",
+        "ddd24269-802e-4320-bfbc-eec80805c3a5": "silver",
+        "9b22f75e-1872-4ff4-9ce7-d84c3f50e4b0": "silver",
+        "sponsor_z5baqddtax": "silver",
+        "sponsor_umlbpo97xof": "silver",
+        "sponsor_uiob953023r": "partner",
+        "d2e9f775-4223-448d-baf6-63d0d2841cf6": "partner",
+        "c838a7cc-ae0c-4a89-9893-0fceadc1ac03": "partner"
+      },
+      "schedule": [
+        {
+          "events": [
+            {
+              "time": "09:00",
+              "title": "Registration & Breakfast",
+              "description": "Welcome and networking breakfast"
+            },
+            {
+              "time": "10:00",
+              "title": "Opening Ceremony",
+              "description": "Welcome speech and rules"
+            }
+          ]
+        },
+        {
+          "events": [
+            {
+              "time": "09:00",
+              "title": "Hacking Begins",
+              "description": ""
+            },
+            {
+              "time": "13:00",
+              "title": "Lunch Break",
+              "description": "Free lunch provided"
+            }
+          ]
+        }
+      ],
+      "id": "4501c5f6-c490-4117-bfdf-6233091c73a1",
+      "section": "pastEvents"
+    }
+  ],
   "pastEvents": [
     {
       "title": "HackSussex 2023",
@@ -138,58 +191,6 @@
       },
       "schedule": [],
       "id": "6bf1605c-0b4f-4b9f-a172-b51494bbe809"
-    },
-    {
-      "title": "HackSussex 2026",
-      "past": true,
-      "date": "2026-02-28",
-      "location": "University of Sussex",
-      "description": "This is an opportunity for students of all abilities to collaborate, learn new skills, and build something cool using technology. It's a great way for people with similar interests to work together on exciting projects in a fast-paced, creative environment. HackSussex 2026 is a fun and inclusive weekend-long event that invites participants to team up and build their own technology in just a short span of time. It's an incredible chance to meet like-minded individuals, develop your skills, and have a blast doing it.\n24 Hours of project building\nWin exciting prizes\nFree swag\nFree Food and Drinks\nWorkshops to learn skills\nCode of Conduct\nHackSussex 2026 is run in accordance with the MLH Code of Conduct.",
-      "eventType": "Hackathon",
-      "ticketsLink": "https://ticketlink.com",
-      "logo": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/events/dd9a2f35-c3eb-4893-a844-d5022d1b6566.png",
-      "sponsors": {
-        "049eef45-84f1-4dbe-90c2-7bbf5676b78d": "silver",
-        "ddd24269-802e-4320-bfbc-eec80805c3a5": "silver",
-        "9b22f75e-1872-4ff4-9ce7-d84c3f50e4b0": "silver",
-        "sponsor_z5baqddtax": "silver",
-        "sponsor_umlbpo97xof": "silver",
-        "sponsor_uiob953023r": "partner",
-        "d2e9f775-4223-448d-baf6-63d0d2841cf6": "partner",
-        "c838a7cc-ae0c-4a89-9893-0fceadc1ac03": "partner"
-      },
-      "schedule": [
-        {
-          "events": [
-            {
-              "time": "09:00",
-              "title": "Registration & Breakfast",
-              "description": "Welcome and networking breakfast"
-            },
-            {
-              "time": "10:00",
-              "title": "Opening Ceremony",
-              "description": "Welcome speech and rules"
-            }
-          ]
-        },
-        {
-          "events": [
-            {
-              "time": "09:00",
-              "title": "Hacking Begins",
-              "description": ""
-            },
-            {
-              "time": "13:00",
-              "title": "Lunch Break",
-              "description": "Free lunch provided"
-            }
-          ]
-        }
-      ],
-      "id": "4501c5f6-c490-4117-bfdf-6233091c73a1",
-      "section": "upcomingEvents"
     }
   ]
 }
