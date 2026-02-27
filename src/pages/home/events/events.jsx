@@ -16,7 +16,11 @@ const EventTypes = () => {
           <p className={styles.description}>{messages.description}</p>
         </div>
         <div className={styles.cta}>
-          <a href={siteData.discord} target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfRM_qgPo4I5--Ijp-Bd2Ttf_01-5zOGZpxDtPRwwIslpO2EA/viewform?usp=publish-editor"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button>{messages.ctaButton}</button>
           </a>
         </div>
