@@ -113,5 +113,11 @@
     "website": "https://www.switchplane.com/",
     "logoUrl": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/sponsors/33ff8dd1-d1a6-4e83-a3d8-0565bc9f31b7.png",
     "id": "c1354f91-c24a-470e-9c74-2a4cd1cca292"
+  },
+  {
+    "name": "CASM Technology",
+    "website": "https://www.casmtechnology.com/",
+    "logoUrl": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/sponsors/767038ad-e24e-4d56-8c79-9f870e085d91.png",
+    "id": "893a0bed-2064-47ad-b9c3-76319b28303e"
   }
 ]
