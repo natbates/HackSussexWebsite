@@ -45,6 +45,22 @@
         "sponsor_z5baqddtax": "silver"
       },
       "id": "fe7964f7-90b6-4f5d-b8e0-9d5d08b83e20"
+    },
+    {
+      "title": "Coders Cup 2023",
+      "date": "2023-05-04",
+      "location": "University of Sussex",
+      "description": "Join us once again for our annual programming competition, the Coders' Cup! Livestreamed from the campus studio we bring you a number of experienced serious programmers battling each other to see who is the best competitive programmer that sussex can offer.\nWant to come watch for yourself? This event will be livestreamed on our youtube and a small number of seats will be available in the studio on the day for friends and family of our competitors.",
+      "eventType": "Coders Cup",
+      "ticketsLink": "",
+      "logo": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/events/a05ee632-030f-4226-94e0-3cef161d1fe8.png",
+      "sponsors": {
+        "sponsor_wqh5udpprz": "partner",
+        "sponsor_uiob953023r": "partner",
+        "sponsor_d9u1s3xr97o": "silver",
+        "sponsor_ei61ruq19o": "silver"
+      },
+      "id": "4c1b8e9d-f441-46f6-a9f3-a394670819f7"
     }
   ]
 }
