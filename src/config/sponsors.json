@@ -101,5 +101,11 @@
     "website": "https://www.gatwickairport.com/",
     "logoUrl": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/sponsors/43801b09-8ec9-4e18-aa89-a59b73b2cb71.png",
     "id": "ddd24269-802e-4320-bfbc-eec80805c3a5"
+  },
+  {
+    "name": "Sussex AI",
+    "website": "https://www.sussex.ac.uk/research/centres/ai-research-group/",
+    "logoUrl": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/sponsors/aa8f7198-81d8-4e37-b9fc-a6a9380dae97.png",
+    "id": "049eef45-84f1-4dbe-90c2-7bbf5676b78d"
   }
 ]
