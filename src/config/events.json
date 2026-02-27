@@ -127,6 +127,23 @@
       },
       "schedule": [],
       "id": "93345427-cab5-4ab6-a9c1-62bd044598ac"
+    },
+    {
+      "title": "Coders Cup 2024",
+      "date": "2024-05-10",
+      "location": "University of Sussex",
+      "description": "The Coders Cup is HackSussex's algorithmic coding competition for students! The live finals are where we place the top 8 of our qualifiers against each other to win the grand prizes! The competition is for undergraduate students to test their programming skills in a fun and exciting way whilst under the pressure of a live show.\n\nThis year is the 4th year of the Coders Cup!\nWho will be this years Coders Cup champion and be taking home prizes worth £1000+",
+      "eventType": "Coders Cup",
+      "ticketsLink": "",
+      "logo": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/events/8ea7e735-215e-44e6-b4ff-b6ca71a95706.png",
+      "sponsors": {
+        "sponsor_z5baqddtax": "silver",
+        "sponsor_tr3w8xyx5b": "bronze",
+        "d2e9f775-4223-448d-baf6-63d0d2841cf6": "partner",
+        "sponsor_uiob953023r": "partner"
+      },
+      "schedule": [],
+      "id": "2e458582-4e3e-4386-8d46-8e5fe2101c8d"
     }
   ]
 }
