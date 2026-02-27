@@ -110,13 +110,22 @@
 .hamburger {
   display: none;
   font-size: 2rem;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
   background: none;
   border: none;
   color: var(--text-colour);
   cursor: pointer;
-  padding-right: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0;
+  margin-left: 15px;
+}
+
+/* when nav is open make the cross smaller, thinner, and lower opacity */
+.hamburger.open {
+  font-size: 1.5rem;
+  opacity: 0.7;
 }
 
 .mobileControls {
@@ -143,6 +152,7 @@
   max-height: 1000px;
   opacity: 1;
   margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 

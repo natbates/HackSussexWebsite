@@ -15,9 +15,22 @@ const Navbar = () => {
 
   const upcomingEvent = useMemo(() => {
     if (!events?.upcomingEvents?.length) return null;
-    const futureEvents = events.upcomingEvents.filter(e => new Date(e.date) > new Date());
+    const now = Date.now();
+    // filter out past events
+    const futureEvents = events.upcomingEvents.filter(e => new Date(e.date) > now);
     if (!futureEvents.length) return null;
-    return futureEvents.sort((a, b) => new Date(a.date) - new Date(b.date))[0];
+
+    // attach closed flag based on 7-day cutoff
+    const annotated = futureEvents.map(e => {
+      const eventDate = new Date(e.date).getTime();
+      const cutoff = eventDate - 7 * 24 * 60 * 60 * 1000;
+      return { ...e, ticketsClosed: now > cutoff };
+    });
+
+    // prefer first event with tickets still open
+    const openEvents = annotated.filter(e => !e.ticketsClosed);
+    const pool = openEvents.length ? openEvents : annotated;
+    return pool.sort((a, b) => new Date(a.date) - new Date(b.date))[0];
   }, [events]);
 
   const links = messages.links.map(link => {
@@ -63,7 +76,7 @@ const Navbar = () => {
               </div>
             ))}
 
-            {upcomingEvent ? (
+            {upcomingEvent && !upcomingEvent.ticketsClosed ? (
               <button className={styles.ticketBtn} onClick={() => window.open(upcomingEvent.ticketsLink, "_blank", "noopener,noreferrer")}>Get Tickets</button>
             ) : (
               <button className={styles.ticketBtn} onClick={() => navigate("/contact")}>Contact Us</button>
@@ -72,12 +85,10 @@ const Navbar = () => {
         </div>
 
         <div className={styles.mobileControls}>
-          {upcomingEvent ? (
+          {upcomingEvent && !upcomingEvent.ticketsClosed && (
             <button className={styles.ticketBtn} onClick={() => window.open(upcomingEvent.ticketsLink, "_blank", "noopener,noreferrer")}>Get Tickets</button>
-          ) : (
-            <button className={styles.ticketBtn} onClick={() => navigate("/contact")}>Contact Us</button>
           )}
-          <button className={styles.hamburger} onClick={() => setMobileOpen(v => !v)}>☰</button>
+          <button className={`${styles.hamburger} ${mobileOpen ? styles.open : ""}`} onClick={() => setMobileOpen(v => !v)}>{mobileOpen ? "✕" : "☰"}</button>
         </div>
       </div>
 
