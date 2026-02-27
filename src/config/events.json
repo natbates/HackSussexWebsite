@@ -1,6 +1,5 @@
 {
-  "upcomingEvents": [],
-  "pastEvents": [
+  "upcomingEvents": [
     {
       "title": "wadawdawdawdawd",
       "date": "2026-02-14",
@@ -24,5 +23,6 @@
       },
       "id": "91463622-f898-47ef-8bdc-8715d083ca96"
     }
-  ]
+  ],
+  "pastEvents": []
 }
