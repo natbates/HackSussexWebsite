@@ -107,5 +107,11 @@
     "website": "https://www.sussex.ac.uk/research/centres/ai-research-group/",
     "logoUrl": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/sponsors/aa8f7198-81d8-4e37-b9fc-a6a9380dae97.png",
     "id": "049eef45-84f1-4dbe-90c2-7bbf5676b78d"
+  },
+  {
+    "name": "Switchplane",
+    "website": "https://www.switchplane.com/",
+    "logoUrl": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/sponsors/33ff8dd1-d1a6-4e83-a3d8-0565bc9f31b7.png",
+    "id": "c1354f91-c24a-470e-9c74-2a4cd1cca292"
   }
 ]
