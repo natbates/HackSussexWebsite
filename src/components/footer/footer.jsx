@@ -45,11 +45,15 @@ const Footer = () => {
                 {column.links.map((link, j) => {
                   const isActive =
                     location.pathname + location.hash === link.href;
+                  const isExternal = /^https?:\/\//.test(link.href);
                   return (
                     <a
                       key={j}
                       href={link.href}
                       className={isActive ? styles.activeLink : ""}
+                      {...(isExternal
+                        ? { target: "_blank", rel: "noopener noreferrer" }
+                        : {})}
                     >
                       {link.label}
                     </a>

@@ -28,7 +28,7 @@ const messages = {
       links: [
         { label: "Sponsor Events", href: "/contact#sponsor" },
         { label: "Join the Committee", href: "/contact#committee" },
-        { label: "Give Suggestions", href: "/feedback" },
+        { label: "Give Suggestions", href: "https://docs.google.com/forms/d/e/1FAIpQLSfRM_qgPo4I5--Ijp-Bd2Ttf_01-5zOGZpxDtPRwwIslpO2EA/viewform?usp=publish-editor" },
         { label: "Contact Us", href: "/contact" },
       ],
     },

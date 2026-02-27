@@ -16,7 +16,6 @@ import Sponsors from "./pages/sponsors/sponsors";
 import Gallery from "./pages/gallery/gallery";
 import Events from "./pages/events/events";
 import FAQ from "./pages/faq/faq";
-import Feedback from "./pages/feedback/feedback";
 
 import Contact from "./pages/contact/contact";
 import PrivacyPolicy from "./pages/privacy-policy/privacyPolicy";
@@ -55,7 +54,6 @@ const App = () => {
                     <Route path="/gallery" element={<Gallery />} />
                     <Route path="/events" element={<Events />} />
                     <Route path="/faq" element={<FAQ />} />
-                    <Route path="/feedback" element={<Feedback />} />
                     <Route path="/schedules/:eventId" element={<EventSchedule />} />
 
                     <Route path="/privacy-policy" element={<PrivacyPolicy />} />
