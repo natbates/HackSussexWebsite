@@ -24,5 +24,22 @@
       "id": "91463622-f898-47ef-8bdc-8715d083ca96"
     }
   ],
-  "pastEvents": []
+  "pastEvents": [
+    {
+      "title": "awdawd",
+      "date": "1111-11-11",
+      "location": "d",
+      "description": "d",
+      "eventType": "Pwn Sussex",
+      "ticketsLink": "",
+      "logo": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/events/c20ef0e0-f922-4140-a1a8-5e2c51d61a70.jpg",
+      "sponsors": {
+        "gold": [],
+        "silver": [],
+        "bronze": [],
+        "partner": []
+      },
+      "id": "6f40f9ec-fec3-489e-854b-3423188bf2c2"
+    }
+  ]
 }
