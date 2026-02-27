@@ -160,18 +160,6 @@
       },
       "schedule": [],
       "id": "82ad3727-dceb-4125-8de3-cb6df6dc12f8"
-    },
-    {
-      "title": "ewfwe",
-      "date": "1111-11-11",
-      "location": "",
-      "description": "",
-      "eventType": "Coders Cup",
-      "ticketsLink": "",
-      "logo": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/events/05db94f6-c4c7-4671-bc87-363f76f42a63.png",
-      "sponsors": {},
-      "schedule": [],
-      "id": "d936b624-46c5-4577-8a0a-99181f70762e"
     }
   ]
 }
