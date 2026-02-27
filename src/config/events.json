@@ -1,4 +1,31 @@
 {
-  "upcomingEvents": [],
+  "upcomingEvents": [
+    {
+      "title": "HackSussex 2026",
+      "date": "2026-02-28",
+      "location": "University of Sussex",
+      "description": "HackSussex 2026 is almost upon us! This unique event is hosted over a full weekend, including 24 hours of non-stop coding, workshops hosted by our sponsors, 4 mouth-wateringly tasty meals from local Brighton caterers, snacks and drinks, and an exclusive 2025 t-shirt, all for free!\n\nYour project can enter multiple of our many prize tracks. If you don’t have a team, find your family-for-the-weekend in our team building event! Together you’ll create a game, some software or something electronic. Have you never coded before? Have you been coding since before you were conceived? Are you competitive? Are you laid back? Want to boost your CV while having fun? Join us for our best Hackathon yet – you won’t want to miss this!",
+      "eventType": "Hackathon",
+      "ticketsLink": "https://ticketlink.com",
+      "logo": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/events/dd9a2f35-c3eb-4893-a844-d5022d1b6566.png",
+      "sponsors": {
+        "gold": [],
+        "silver": [
+          "049eef45-84f1-4dbe-90c2-7bbf5676b78d",
+          "ddd24269-802e-4320-bfbc-eec80805c3a5",
+          "9b22f75e-1872-4ff4-9ce7-d84c3f50e4b0",
+          "sponsor_z5baqddtax",
+          "sponsor_umlbpo97xof"
+        ],
+        "bronze": [],
+        "partner": [
+          "sponsor_uiob953023r",
+          "d2e9f775-4223-448d-baf6-63d0d2841cf6",
+          "c838a7cc-ae0c-4a89-9893-0fceadc1ac03"
+        ]
+      },
+      "id": "4501c5f6-c490-4117-bfdf-6233091c73a1"
+    }
+  ],
   "pastEvents": []
 }
