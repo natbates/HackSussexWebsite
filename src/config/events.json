@@ -160,6 +160,18 @@
       },
       "schedule": [],
       "id": "82ad3727-dceb-4125-8de3-cb6df6dc12f8"
+    },
+    {
+      "title": "Test why please",
+      "date": "1111-11-11",
+      "location": "",
+      "description": "",
+      "eventType": "Hackathon",
+      "ticketsLink": "",
+      "logo": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/events/b77c59f8-1b9b-422c-9267-28f41cd7909b.jpg",
+      "sponsors": {},
+      "schedule": [],
+      "id": "6670aeeb-ebf4-4cad-a93c-c997f878ba3b"
     }
   ]
 }
