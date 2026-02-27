@@ -4,7 +4,7 @@
       "title": "HackSussex 2026",
       "date": "2026-02-28",
       "location": "University of Sussex",
-      "description": "HackSussex 2026 is almost upon us! This unique event is hosted over a full weekend, including 24 hours of non-stop coding, workshops hosted by our sponsors, 4 mouth-wateringly tasty meals from local Brighton caterers, snacks and drinks, and an exclusive 2025 t-shirt, all for free!\n\nYour project can enter multiple of our many prize tracks. If you donât have a team, find your family-for-the-weekend in our team building event! Together youâll create a game, some software or something electronic. Have you never coded before? Have you been coding since before you were conceived? Are you competitive? Are you laid back? Want to boost your CV while having fun? Join us for our best Hackathon yet â you wonât want to miss this!",
+      "description": "HackSussex 2026 is almost upon us! This unique event is hosted over a full weekend, including 24 hours of non-stop coding, workshops hosted by our sponsors, 4 mouth-wateringly tasty meals from local Brighton caterers, snacks and drinks, and an exclusive 2025 t-shirt, all for free!\n\nYour project can enter multiple of our many prize tracks. If you donÃ¢ÂÂt have a team, find your family-for-the-weekend in our team building event! Together youÃ¢ÂÂll create a game, some software or something electronic. Have you never coded before? Have you been coding since before you were conceived? Are you competitive? Are you laid back? Want to boost your CV while having fun? Join us for our best Hackathon yet Ã¢ÂÂ you wonÃ¢ÂÂt want to miss this!",
       "eventType": "Hackathon",
       "ticketsLink": "https://ticketlink.com",
       "logo": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/events/dd9a2f35-c3eb-4893-a844-d5022d1b6566.png",
@@ -62,7 +62,7 @@
       "title": "HackSussex 2023",
       "date": "2023-02-18",
       "location": "University of Sussex",
-      "description": "This is an opportunity for students of all abilities to collaborate, learn new skills, and build something cool using technology. It's a great way for people with similar interests to work together on exciting projects in a fast-paced, creative environment.\n\n24 Hours of project building \nWin exciting prizes \nFree swag \nFree Food and Drinks \nWorkshops to learn skills \n\nThis year HackSussex 2023 is going Hybrid!\nIn addition to the in-person experience, you will be able to take part online! Thanks to our partners at the Media Technology Lab, we will be running a professional live stream throughout the event to allow our digital attendees to ask questions, speak to sponsors, attend workshops and take part in the hack!\n\n\nCode of Conduct \nHackSussex 2023 is run in accordance with the MLH Code of Conduct and the Hackathons UK Code of Conduct.",
+      "description": "This is an opportunity for students of all abilities to collaborate, learn new skills, and build something cool using technology. It's a great way for people with similar interests to work together on exciting projects in a fast-paced, creative environment.\n\n24 Hours of project buildingâ\nWin exciting prizesâ\nFree swagâ\nFree Food and Drinksâ\nWorkshops to learn skillsâ\n\nThis year HackSussex 2023 is going Hybrid!\nIn addition to the in-person experience, you will be able to take part online! Thanks to our partners at the Media Technology Lab, we will be running a professional live stream throughout the event to allow our digital attendees to ask questions, speak to sponsors, attend workshops and take part in the hack!\n\n\nCode of Conduct \nHackSussex 2023 is run in accordance with the MLH Code of Conduct and the Hackathons UK Code of Conduct.",
       "eventType": "Hackathon",
       "ticketsLink": "",
       "logo": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/events/ace79167-a6d2-49df-9ffb-9394298c5fb5.png",
@@ -91,6 +91,23 @@
         "sponsor_ei61ruq19o": "silver"
       },
       "id": "4c1b8e9d-f441-46f6-a9f3-a394670819f7"
+    },
+    {
+      "title": "Game Jam 2023",
+      "date": "2023-11-25",
+      "location": "University of Sussex",
+      "description": "This is an opportunity for students of all abilities to collaborate, learn new skills, and build something cool using technology. It's a great way for people with similar interests to work together on exciting projects in a fast-paced, creative environment. HackSussex Game Jam is a fun and inclusive weekend-long event that invites participants to team up and build their own video games in just a short span of time. It's an incredible chance to meet like-minded individuals, develop your skills, and have a blast doing it.\n\n- 24 Hours of project building \n- Win exciting prizes \n- Free swag \n- Free Food and Drinks \n- Workshops to learn skills \n\nCode of Conduct \nHackSussex Game Jam 2023 is run in accordance with the MLH Code of Conduct and the Hackathons UK Code of Conduct.\n",
+      "eventType": "Game Jam",
+      "ticketsLink": "",
+      "logo": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/events/0d3084c6-5f7e-4117-ad00-9bfaf270970b.png",
+      "sponsors": {
+        "413917d2-a40c-4655-ba98-19d52832a875": "gold",
+        "sponsor_7zc0feqft4": "bronze",
+        "d2e9f775-4223-448d-baf6-63d0d2841cf6": "partner",
+        "sponsor_uiob953023r": "partner"
+      },
+      "schedule": [],
+      "id": "c3a429cb-06f2-444f-8afa-8348f4aaf7fa"
     }
   ]
 }
