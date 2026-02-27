@@ -30,7 +30,7 @@ const EventSchedule = () => {
   const hasSchedule =
     Array.isArray(event.schedule) &&
     event.schedule.some(
-      (day) => Array.isArray(day.items) && day.items.length > 0
+      (day) => Array.isArray(day.events) && day.events.length > 0
     );
 
   // normalise sponsor data for display
@@ -66,10 +66,10 @@ const EventSchedule = () => {
         <div className={styles.daysGrid}>
           {event.schedule.map((daySchedule, dayIndex) => (
             <div key={dayIndex} className={styles.daySection}>
-              <h2 className={styles.dayTitle}>{daySchedule.day}</h2>
+              <h2 className={styles.dayTitle}>Day {dayIndex + 1}</h2>
 
               <div className={styles.timeline}>
-                {(daySchedule.items || []).map((item, index) => (
+                {(daySchedule.events || []).map((item, index) => (
                   <div key={index} className={styles.item}>
                     <div className={styles.time}>{item.time}</div>
                     <div className={styles.content}>

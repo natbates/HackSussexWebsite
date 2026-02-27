@@ -24,6 +24,36 @@
           "c838a7cc-ae0c-4a89-9893-0fceadc1ac03"
         ]
       },
+      "schedule": [
+        {
+          "events": [
+            {
+              "time": "09:00",
+              "title": "Registration & Breakfast",
+              "description": "Welcome and networking breakfast"
+            },
+            {
+              "time": "10:00",
+              "title": "Opening Ceremony",
+              "description": "Welcome speech and rules"
+            }
+          ]
+        },
+        {
+          "events": [
+            {
+              "time": "09:00",
+              "title": "Hacking Begins",
+              "description": ""
+            },
+            {
+              "time": "13:00",
+              "title": "Lunch Break",
+              "description": "Free lunch provided"
+            }
+          ]
+        }
+      ],
       "id": "4501c5f6-c490-4117-bfdf-6233091c73a1"
     }
   ],
