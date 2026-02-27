@@ -12,6 +12,22 @@
   margin-bottom: 20px;
 }
 
+.noEvents
+{
+  text-align: start;
+  width: 100%;
+  font-size: 1.25rem;
+  opacity: 0.8;
+  margin-top: 2rem;
+}
+
+.upcomingEventsContainer
+{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 .grid {
   display: flex;
   flex-wrap: wrap;

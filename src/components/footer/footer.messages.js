@@ -2,7 +2,7 @@ const messages = {
   logoAlt: "HackSussex Logo",
 
   footerDescription:
-    "HackSussex is a student-led hackathon society bringing together designers, developers, and innovators.",
+    "HackSussex is a student-led technology community that organises multiple events, including but not limited to hackathons, workshops, talks, and social events.",
 
   linkColumns: [
     {

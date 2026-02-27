@@ -36,6 +36,7 @@
     display: block;
     width: 100%;
     height: auto;
+    margin-top: 5vw;
 }
 
 .mobileLogo {
@@ -57,7 +58,7 @@
 
 .description
 {
-    text-align: start;
+    text-align: center;
     font-size: 1.2rem;
 }
 

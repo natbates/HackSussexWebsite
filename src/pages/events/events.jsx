@@ -15,7 +15,6 @@ const Events = () => {
 
   const now = new Date();
 
-  // Set timers for upcoming events (show countdown until 1 week before)
   useEffect(() => {
     const interval = setInterval(() => {
       const updatedTimers = {};
@@ -44,15 +43,14 @@ const Events = () => {
   }, [upcomingEvents]);
 
   if (upcomingEvents.length === 0 && pastEvents.length === 0)
-    return <p className={styles.container}>{messages.noEvents}</p>;
+    return (<div className={styles.container}><p className={styles.noEvents}>{messages.noEvents}</p></div>);
 
   return (
     <div className={styles.container}>
       <h1 className={styles.heading}>{messages.title}</h1>
 
-      {/* Upcoming Events */}
       {upcomingEvents.length > 0 && (
-        <>
+        <div className={styles.upcomingEventsContainer}>
           <h2 className={styles.subHeading}>{messages.upcomingEventsTitle}</h2>
           {upcomingEvents.map((event) => (
             <Event
@@ -63,12 +61,11 @@ const Events = () => {
               timer={timers[event.id]}
             />
           ))}
-        </>
+        </div>
       )}
 
-      {/* Past Events */}
       {pastEvents.length > 0 && (
-        <>
+        <div className={styles.upcomingEventsContainer}>
           <h2 className={styles.subHeading}>{messages.pastEventsTitle}</h2>
           {pastEvents.map((event) => (
             <Event
@@ -76,11 +73,11 @@ const Events = () => {
               key={event.id}
               event={event}
               sponsors={sponsors}
-              timer={{ closed: true }} // past events always have tickets closed
+              timer={{ closed: true }}
               isPast={true}
             />
           ))}
-        </>
+        </div>
       )}
     </div>
   );
