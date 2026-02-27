@@ -23,15 +23,35 @@
   font-weight: 700;
 }
 
+.topLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.text p {
+  margin-bottom: 0;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: end;
+  gap: 1rem;
+}
+
 
 .upComingEvent
 {
   position: relative;
   max-width: var(--max-width);
-  margin-top: 20px;
+  margin-top: 35px;
 }
 
-.upComingEvent::after
+/* .upComingEvent::after
 {
   content: "";
   width: 30px;
@@ -44,7 +64,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .loading,
 .error,

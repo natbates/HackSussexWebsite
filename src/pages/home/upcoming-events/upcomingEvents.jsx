@@ -3,18 +3,12 @@ import { useSiteData } from "../../../hooks/useSiteData";
 import styles from "./upcomingEvents.module.css";
 import messages from "./upcomingEvents.messages";
 import Event from "../../../components/event/event";
+import { useNavigate } from "react-router-dom";
 
 const UpcomingEvents = () => {
   const { events, sponsors, loading } = useSiteData();
+  const navigate = useNavigate();
 
-  /**
-   * timers = {
-   *   [eventId]: {
-   *     text: string,
-   *     closed: boolean
-   *   }
-   * }
-   */
   const [timers, setTimers] = useState({});
 
   useEffect(() => {
@@ -66,10 +60,21 @@ const UpcomingEvents = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.heading}>{messages.heading}</h1>
-      <p className={styles.description}>{messages.description}</p>
-      <div className={styles.upComingEvent}>
+      <div className={styles.topLine}>
+        <div className={styles.text}>
+          <h1 className={styles.heading}>{messages.heading}</h1>
+          <p className={styles.description}>{messages.description}</p>
+        </div>
+        <div className={styles.cta}>
+          <button
+            onClick={() => navigate("/events")}
+          >
+            {messages.ctaButton}
+          </button>
+        </div>
+      </div>
 
+      <div className={styles.upComingEvent}>
         {events.upcomingEvents.map((event) => (
           <Event
             key={event.id}

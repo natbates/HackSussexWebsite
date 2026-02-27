@@ -11,7 +11,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 35px;
 }
 
 .heading
@@ -21,6 +21,32 @@
   margin: 0;
   font-size: 2rem;
   font-weight: 700;
+}
+
+.topLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.text p {
+  margin-bottom: 0;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: end;
+  gap: 1rem;
+}
+
+@media (max-width: 1000px) {
+  .topLine {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .videoGrid iframe {

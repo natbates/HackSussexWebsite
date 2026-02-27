@@ -5,6 +5,7 @@ const upcomingEventsMessages = {
   loadingText: "Loading upcoming events...",
   errorText: "Failed to load events.",
   description: "Come check out our upcoming events!",
+  ctaButton: "See all of our events",
 };
 
 export default upcomingEventsMessages;

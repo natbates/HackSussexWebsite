@@ -6,6 +6,22 @@ import { githubRawToLocal } from "../../util/githubRawToLocal";
 import { getSponsorsByTier, flattenSponsors } from "../../util/sponsorHelpers";
 
 const Event = ({ event, sponsors, timer, simpleDesign = false, isPast = false }) => {
+  // helper to render up to 3 lines and preserve manual breaks
+  const renderDescription = (text) => {
+    if (!text) return null;
+    const lines = text.split(/\r?\n/);
+    if (lines.length <= 3) {
+      return lines.map((line, i) => (
+        <span key={i}>{line}{i < lines.length - 1 && <br />}</span>
+      ));
+    }
+    const firstThree = lines.slice(0, 3);
+    return firstThree.map((line, i) => (
+      <span key={i}>
+        {line}{i < firstThree.length - 1 ? <br /> : "…"}
+      </span>
+    ));
+  };
   const navigate = useNavigate();
 
   const ticketsClosed = timer?.closed;
@@ -113,9 +129,8 @@ const Event = ({ event, sponsors, timer, simpleDesign = false, isPast = false })
     );
   }
 
-  // -------------------
-  // Full Card JSX
-  // -------------------
+  console.log("Description:", event.description);
+
   return (
     <div className={styles.eventWrapper}>
       <div className={styles.eventCard}>
@@ -128,14 +143,14 @@ const Event = ({ event, sponsors, timer, simpleDesign = false, isPast = false })
           />
         </div>
 
-        {/* Content */}
         <div className={styles.content}>
           <h2 className={styles.eventTitle}>{event.title}</h2>
 
           <p className={styles.location}>{event.location}</p>
-          <p className={styles.description}>{event.description}</p>
 
-          {/* Countdown */}
+          {/* render description with preserved breaks and limit to three lines */}
+          <p className={styles.description}>{renderDescription(event.description)}</p>
+
           {!ticketsClosed && timer?.text && (
             <p className={styles.countdown}>{timer.text}</p>
           )}

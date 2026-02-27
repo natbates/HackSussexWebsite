@@ -118,6 +118,16 @@
   margin-top: 0;
   line-height: 1.5;
   flex-grow: 1;
+  /* prevent half-line cropping by explicitly capping height to three lines */
+  /* we also trim the string in JS, so CSS becomes purely a safety net */
+  max-height: calc(1.5em * 3);
+  /* show only three lines, fall back to max-height if line-clamp behaves oddly */
+  /* keep newline characters visible */
+  white-space: pre-wrap;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .sponsors {
@@ -179,6 +189,7 @@
   width: 100%;
   justify-content: flex-start;
   flex-wrap: wrap;
+  margin-top: auto;
 }
 
 @media (max-width: 740px) {

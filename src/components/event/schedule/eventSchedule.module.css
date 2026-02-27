@@ -133,8 +133,9 @@
   border-radius: var(--border-radius);
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  text-align: start;
+  align-items: center; /* center content to keep cards even height */
+  justify-content: center;
+  text-align: center;
   gap: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   /* Glass effect */
@@ -144,6 +145,7 @@
   border: 1px solid rgba(255, 255, 255, 0.15);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   padding: 1rem;
+  height: 140px; /* fixed card height so all cells match */
 }
 
 /* horizontal row layout for schedule page */
@@ -163,7 +165,9 @@
 }
 
 .sponsorImage {
-  max-width: 100%;
-  max-height: 100px;
+  width: auto;
+  height: 100px; /* force same height for every logo */
   object-fit: contain;
+  max-width: 100%;
+  filter: brightness(0) invert(1);
 }

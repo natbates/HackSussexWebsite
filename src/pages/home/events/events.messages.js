@@ -8,6 +8,7 @@ import CodersCup from "../../../assets/gallery/codersCup_kf3z4x.jpg";
 const messages = {
   pageTitle: "Our most popular events",
   description: "Check out some of our most popular events",
+  ctaButton: "Join the Discord",
   eventTypes: [
     {
       id: "hackathons",

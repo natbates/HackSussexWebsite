@@ -20,7 +20,6 @@ const messages = {
         { label: "Events", href: "/events" },
         { label: "Committee", href: "/committee" },
         { label: "Past Sponsors", href: "/sponsors" },
-        { label: "About Us", href: "/about" },
         { label: "FAQ", href: "/faq" },
       ],
     },
