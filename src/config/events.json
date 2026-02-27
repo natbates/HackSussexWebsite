@@ -178,6 +178,23 @@
       },
       "schedule": [],
       "id": "2977ff45-f35b-447a-8707-a983d83d16f0"
+    },
+    {
+      "title": "Game Jam 2025",
+      "date": "2025-12-06",
+      "location": "University of Sussex",
+      "description": "Are you ready to conjure up something magical this winter? \n\nJoin us for HackSussex’s annual Game Jam, taking place from Saturday 6th to Sunday 7th December 2025 - a full weekend of creativity, coding, design, and fun!\n\nWhether you're a seasoned game developer, an artist, a storyteller, or just curious to try something new, everyone is welcome. You’ll have 24 hours to dream up, design, and build your very own game - all while learning new skills, collaborating with others, and maybe even sprinkling in a little bit of magic along the way.\n\nHere’s what to expect:\n- Plenty of snacks and drinks to keep your energy high\n- A chance to meet amazing people and form new teams\n- Fun themes and prizes for the best creations\n- And of course, an unforgettable weekend of creativity and chaos!\n\nWhether you’re building your first ever game or returning to defend your pixelated crown, this year’s Game Jam promises to be an event full of imagination, teamwork, and (just maybe) a touch of magic.\n\nCode of Conduct \nHackSussex Game Jam 2025 is run in accordance with the MLH Code of Conduct.\n",
+      "eventType": "Game Jam",
+      "ticketsLink": "",
+      "logo": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/events/7b9c8bc1-b0ae-4a7a-9fec-7afc7b6512f4.png",
+      "sponsors": {
+        "c838a7cc-ae0c-4a89-9893-0fceadc1ac03": "silver",
+        "sponsor_z5baqddtax": "silver",
+        "sponsor_uiob953023r": "partner",
+        "d2e9f775-4223-448d-baf6-63d0d2841cf6": "partner"
+      },
+      "schedule": [],
+      "id": "6bf1605c-0b4f-4b9f-a172-b51494bbe809"
     }
   ]
 }
