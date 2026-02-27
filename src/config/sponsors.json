@@ -89,5 +89,11 @@
     "website": "https://www.rotovr.com/",
     "logoUrl": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/sponsors/592cdf33-316f-4613-bdf9-61ff009be98c.png",
     "id": "413917d2-a40c-4655-ba98-19d52832a875"
+  },
+  {
+    "name": "Unity",
+    "website": "https://unity.com",
+    "logoUrl": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/sponsors/9d306fc4-e2d9-4153-b95c-8c6ca67c4264.png",
+    "id": "9b22f75e-1872-4ff4-9ce7-d84c3f50e4b0"
   }
 ]
