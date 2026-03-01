@@ -58,16 +58,18 @@
     "linkedin": "https://www.linkedin.com/in/david-frommont/"
   },
   {
-    "id": "mem_0yzgkjes597",
     "name": "Ella Bennison",
     "role": "Competitive Programming",
+    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_4q83sxiz.jpg",
+    "pastCommittee": true,
     "years": [
       "2023/2024"
     ],
-    "image": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/committee/committee_4q83sxiz.jpg",
-    "pastCommittee": false,
+    "id": "mem_0yzgkjes597",
     "linkedin": "https://www.linkedin.com/in/ella-bennison-7bab61254",
-    "github": "https://github.com/EllaCompSci"
+    "github": "https://github.com/EllaCompSci",
+    "section": null,
+    "past": false
   },
   {
     "id": "mem_k2smnp4dj0k",
